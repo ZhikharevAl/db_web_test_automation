@@ -5,6 +5,7 @@ import logging
 from pages.home_page import HomePage
 
 
+# Проверка заголовка страницы
 @pytest.mark.smoke
 @pytest.mark.parametrize('url, expected_title, test_type', [
     ('https://www.demoblaze.com/', 'STORE', 'positive'),

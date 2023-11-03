@@ -2,8 +2,6 @@ from pages.base_page import BasePage
 
 
 class HomePage(BasePage):
-    # URL домашней страницы
-    URL = "https://www.demoblaze.com/"
 
     # Переход на домашнюю страницу
     def go_to(self):
