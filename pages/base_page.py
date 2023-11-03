@@ -2,6 +2,7 @@ from playwright.sync_api import Page
 
 
 class BasePage:
+    # URL = "https://www.demoblaze.com/"
     URL = "https://www.demoblaze.com/"
 
     def __init__(self, page: Page):
