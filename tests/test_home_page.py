@@ -2,11 +2,14 @@ import pytest
 import allure
 import logging
 
+from allure_commons.types import Severity
+
 from pages.home_page import HomePage
 
 
 # Проверка заголовка страницы
 @pytest.mark.smoke
+@allure.severity(Severity.CRITICAL)
 @pytest.mark.parametrize('url, expected_title, test_type', [
     ('https://www.demoblaze.com/', 'STORE', 'positive'),
     ('https://www.demoblaze.com/', 'Wrong Title', 'negative'),
@@ -14,7 +17,8 @@ from pages.home_page import HomePage
 def test_home_page_title(page, url, expected_title, test_type, caplog):
     caplog.set_level(logging.INFO)
     home_page = HomePage(page)
-    home_page.go_to()
+    with allure.step("Открываем страницу входа"):
+        home_page.go_to()
     with allure.step("Проверка заголовка"):
         if test_type == 'positive':
             assert home_page.get_title() == expected_title, f"Wrong title for {url}"
