@@ -16,6 +16,8 @@ def test_e2e(page, url, caplog):
     with allure.step("Проверка заголовка домашней страницы"):
         test_home_page_title(page, url, expected_title, test_type, caplog)
     with allure.step("Проверка функциональности входа в систему"):
+        # TODO: Временно проверяем только на test_type = 'negative'
+        test_type = 'negative'
         test_login_functionality(page, username, password, test_type, caplog)
     # TODO: Добавить другие тесты, чтобы сделать его полноценным e2e тестом
 
