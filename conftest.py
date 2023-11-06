@@ -5,7 +5,7 @@ from playwright.sync_api import sync_playwright
 @pytest.fixture
 def browser():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)  # Запуск браузера
+        browser = p.chromium.launch(headless=True)  # Запуск браузера
         yield browser
         browser.close()  # Закрытие браузера после теста
 
