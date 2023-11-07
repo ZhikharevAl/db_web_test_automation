@@ -19,10 +19,13 @@ def test_home_page_title(page, url, expected_title, test_type, caplog):
     home_page = HomePage(page)
     with allure.step("Открываем страницу входа"):
         home_page.go_to()
-    with allure.step("Проверка заголовка"):
+    with ((allure.step("Проверка заголовка"))):
         if test_type == 'positive':
-            assert home_page.get_title() == expected_title, f"Wrong title for {url}"
+            assert home_page.get_title() == expected_title, \
+                f"Wrong title for {url}"
             logging.info(f"Title is correct for {url}")
         elif test_type == 'negative':
-            assert home_page.get_title() != expected_title, f"Title should not be {expected_title}"
-            logging.info(f"Title is not {expected_title} as expected for {url}")
+            assert home_page.get_title() != expected_title, \
+                f"Title should not be {expected_title}"
+            logging.info(f"Title is not {expected_title} as "
+                         f"expected for {url}")

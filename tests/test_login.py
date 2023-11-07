@@ -21,11 +21,13 @@ def test_login_functionality(page, username, password, test_type, caplog):
         login_page.go_to()
     with allure.step("Вводим логин и пароль"):
         login_page.login(username, password)
-    with allure.step("Проверяем правильность входа"):
+    with ((allure.step("Проверяем правильность входа"))):
         if test_type == 'positive':
-            assert login_page.is_logged_in(username) is True, f"Wrong result for {username} and {password}"
+            assert login_page.is_logged_in(username) is True, \
+                f"Wrong result for {username} and {password}"
             logging.info(f"Login is successful for {username}")
         elif test_type == 'negative':
             assert login_page.is_logged_in(
-                username) is False, f"Login should not be successful for {username} and {password}"
+                username) is False, \
+                f"Login should not be successful for {username} and {password}"
             logging.info(f"Login is not successful as expected for {username}")
