@@ -67,9 +67,8 @@ jobs:
           pip install allure-pytest
       - name: Install Allure commandline
         run: |
-          sudo wget https://github.com/allure-framework/allure2/releases/download/2.23.1/allure-2.23.1.tgz
-          sudo tar -zxvf allure-2.23.1.tgz -C /opt/
-          echo "echo "PATH=$PATH:/opt/allure-2.23.1/bin/" >> $GITHUB_ENV
+          sudo wget https://github.com/allure-framework/allure2/releases/download/2.23.1/allure-2.23.1.tgz && 
+          sudo tar -zxvf allure-2.23.1.tgz -C /opt/ && sudo ln -s /opt/allure-2.23.1/bin/allure /usr/bin/allure
       - name: Generate Allure report
         run: allure generate allure_results --clean
       - name: Deploy report to Github Pages
