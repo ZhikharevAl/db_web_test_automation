@@ -7,6 +7,11 @@ on:
         description: "Run tests"
         required: false
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   flake8:
     runs-on: ubuntu-latest
