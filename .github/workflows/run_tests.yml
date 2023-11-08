@@ -57,7 +57,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4.1.1
-      - name: set up python
+      - name: Set up Python
         uses: actions/setup-python@v4.7.1
         with:
           python-version: "3.12.0"
@@ -66,13 +66,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install allure-pytest
       - name: Generate Allure report
-        run: allure generate allure_results --clean
+        run: |
+          allure generate allure_results --clean
       - name: Deploy report to Github Pages
         uses: peaceiris/actions-gh-pages@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-history
+          PUBLISH_DIR: ./allure-report
+
 
 
 
