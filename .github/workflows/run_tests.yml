@@ -76,10 +76,16 @@ jobs:
           sudo tar -zxvf allure-2.23.1.tgz -C /opt/ && sudo ln -s /opt/allure-2.23.1/bin/allure /usr/bin/allure
       - name: Generate Allure report
         run: allure generate allure_results --clean
+      - name: Upload Allure report
+        uses: actions/upload-artifact@v2
+        with:
+          name: allure-report
+          path: allure_results
       - name: Deploy report to Github Pages
         uses: actions/deploy-pages@v1.2.9
         with:
           target-folder: allure_results
+
 
 
 
