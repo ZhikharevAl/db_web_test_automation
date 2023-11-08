@@ -67,17 +67,18 @@ jobs:
           pip install allure-pytest
       - name: Install Allure commandline
         run: |
-          curl -o allure-2.8.1.tgz -Ls https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.8.1/allure-2.8.1.tgz
-          sudo tar -zxvf allure-2.8.1.tgz -C /opt/
-          echo "PATH=$PATH:/opt/allure-2.8.1/bin/" >> $GITHUB_ENV
+          sudo wget https://github.com/allure-framework/allure2/releases/download/2.23.1/allure-2.23.1.tgz
+          sudo tar -zxvf allure-2.23.1.tgz -C /opt/
+          echo "PATH=$PATH:/opt/allure-2.23.1/bin/" >> $GITHUB_ENV
       - name: Generate Allure report
         run: allure generate allure_results --clean
       - name: Deploy report to Github Pages
         uses: peaceiris/actions-gh-pages@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACTIONS_DEPUBLISH_BRANCH: gh-pages
+          PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./allure-report
+
 
 
 
