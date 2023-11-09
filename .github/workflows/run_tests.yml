@@ -14,7 +14,7 @@ permissions:
 
 jobs:
 
-  flake8:
+  Flake8:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,8 +31,8 @@ jobs:
       - name: Run Flake8
         run: flake8 .
 
-  test:
-    needs: flake8
+  Test:
+    needs: Flake8
     runs-on: ubuntu-latest
 
     steps:
@@ -65,7 +65,7 @@ jobs:
 
   generate-report:
     runs-on: ubuntu-latest
-    needs: test
+    needs: Test
     name: Generate report
     steps:
       - uses: actions/setup-java@v3
