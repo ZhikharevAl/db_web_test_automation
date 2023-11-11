@@ -54,7 +54,7 @@ jobs:
           playwright install
       - name: Run tests
         run: |
-          pytest --alluredir=allure-results --label=GITHUB_RUN_NUMBER
+          pytest --alluredir=allure-results
 
       - name: Store allure history
         uses: actions/upload-artifact@v3
