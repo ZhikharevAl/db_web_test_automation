@@ -23,8 +23,7 @@ def test_signup_functionality(page, username, password, test_type, caplog):
         signup_page.go_to()
     with allure.step("Вводим логин и пароль"):
         signup_page.sign_up(username, password)
-    with allure.step("Проверяем правильность регистрации"):
-        assert signup_page.is_logged_in(username, test_type) == (test_type == 'positive'), \
-            f"Неправильный результат для {username} и {password}"
-
-
+    with (allure.step("Проверяем правильность регистрации")):
+        assert signup_page.is_logged_in(username, test_type) == \
+               (test_type == 'positive'), \
+               f"Неправильный результат для {username} и {password}"
