@@ -15,6 +15,7 @@ class RegisterAndLoginPage(BasePage):
         self.page.fill(LoginPageLocators.USERNAME_FIELD_SELECTOR, username)
         self.page.fill(LoginPageLocators.PASSWORD_FIELD_SELECTOR, password)
         self.click_button(LoginPageLocators.SUBMIT_BUTTON_SELECTOR)
+        self.wait_for_selector(LoginPageLocators.USERNAME_DISPLAY_SELECTOR)
 
     def is_logged_in(self, username: str) -> bool:
         return (self.page.inner_text
