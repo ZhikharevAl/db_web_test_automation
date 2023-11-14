@@ -8,6 +8,7 @@ class SignUpPage(BasePage):
         self.page.fill(SignUpPageLocators.USERNAME_INPUT, username)
         self.page.fill(SignUpPageLocators.PASSWORD_INPUT, password)
         self.page.click(SignUpPageLocators.SIGNUP_SUBMIT_BUTTON)
+        self.page.click(SignUpPageLocators.CLOSE_BUTTON)
 
     def is_logged_in(self, username: str, test_type: str) -> bool:
         if test_type == 'positive':
