@@ -1,5 +1,3 @@
-import time
-
 import pytest
 import allure
 import logging
@@ -26,8 +24,11 @@ def test_login_functionality(page, username, password, test_type, caplog):
 
     with allure.step("Открываем страницу входа"):
         login_page.go_to()
-    with allure.step("Регистрируем нового пользователя"):
-        signup_successful = test_signup_functionality(page, username, password, test_type='positive', caplog=caplog)
+    with (allure.step("Регистрируем нового пользователя")):
+        signup_successful = \
+            test_signup_functionality(page, username,
+                                      password, test_type='positive',
+                                      caplog=caplog)
     if signup_successful:
         with allure.step("Вводим логин и пароль"):
             login_page.login(username, password)
@@ -39,5 +40,7 @@ def test_login_functionality(page, username, password, test_type, caplog):
             elif test_type == 'negative':
                 assert login_page.is_logged_in(
                     username) is False, \
-                    f"Login should not be successful for {username} and {password}"
-                logging.info(f"Login is not successful as expected for {username}")
+                    (f"Login should not be successful for "
+                     f"{username} and {password}")
+                logging.info(f"Login is not successful as expected "
+                             f"for {username}")

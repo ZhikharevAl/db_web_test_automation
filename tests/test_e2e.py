@@ -1,4 +1,3 @@
-import time
 
 import allure
 import pytest
@@ -21,8 +20,10 @@ class TestE2E:
         with allure.step("Проверка заголовка домашней страницы"):
             test_home_page_title(page, url, expected_title, test_type, caplog)
         with allure.step("Проверка правильности регистрации"):
-            test_signup_functionality(page, username, password, test_type, caplog)
-        with allure.step("Проверка функциональности входа в систему"):
+            test_signup_functionality(page, username,
+                                      password, test_type, caplog)
+        with allure.step("Проверка функциональности входа "
+                         "в систему"):
             test_login_functionality(page, username,
                                      password, test_type, caplog)
     # TODO: Добавить другие тесты, чтобы сделать его полноценным e2e тестом
