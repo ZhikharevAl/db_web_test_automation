@@ -1,4 +1,3 @@
-
 class LoginPageLocators:
     LOGIN_BUTTON_SELECTOR = '#login2'
     USERNAME_FIELD_SELECTOR = '#loginusername'
@@ -14,3 +13,7 @@ class SignUpPageLocators:
     SIGNUP_SUBMIT_BUTTON = "button[onclick='register()']"
     CLOSE_BUTTON = ("#signInModal > div > div > div.modal-footer > "
                     "button.btn.btn-secondary")
+
+
+class LogOutPageLocators:
+    LOGOUT_BUTTON = "#logout2"
