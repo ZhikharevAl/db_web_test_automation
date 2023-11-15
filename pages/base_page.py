@@ -10,6 +10,9 @@ class BasePage:
     def go_to(self):
         self.page.goto(self.URL)
 
+    def query_selector_all(self, selector):
+        return self.page.query_selector_all(selector)
+
     def wait_for_selector(self, selector: str):
         self.page.wait_for_selector(selector)
 
