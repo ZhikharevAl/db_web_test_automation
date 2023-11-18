@@ -75,5 +75,3 @@ class BasePage:
         :param selector: Селектор элемента, который нужно дождаться.
         """
         self.page.wait_for_selector(selector)
-
-
