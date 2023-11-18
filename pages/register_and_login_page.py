@@ -4,15 +4,19 @@ from pages.locators import SignUpPageLocators, LoginPageLocators
 
 class RegisterAndLoginPage(BasePage):
     """
-    Класс RegisterAndLoginPage наследует от базового класса BasePage и представляет собой
-    страницу регистрации и входа в систему. Он содержит методы для регистрации и входа в систему.
+    Класс RegisterAndLoginPage наследует от базового
+    класса BasePage и представляет собой
+    страницу регистрации и входа в систему.
+    Он содержит методы для регистрации и входа в систему.
     """
 
     def register_and_login(self, username: str, password: str):
         """
-        Регистрация и вход в систему с указанными именем пользователя и паролем.
+        Регистрация и вход в систему с указанными
+        именем пользователя и паролем.
 
-        :param username: Имя пользователя для регистрации и входа в систему.
+        :param username: Имя пользователя для регистрации
+                         и входа в систему.
         :param password: Пароль для регистрации и входа в систему.
         """
         self.click_button(SignUpPageLocators.SIGNUP_BUTTON)
@@ -31,10 +35,10 @@ class RegisterAndLoginPage(BasePage):
         """
         Проверяет, выполнен ли вход в систему для указанного пользователя.
 
-        :param username: Имя пользователя, для которого проверяется вход в систему.
+        :param username: Имя пользователя, для которого
+                         проверяется вход в систему.
         :return: True, если пользователь вошел в систему, иначе False.
         """
         return (self.inner_text
                 (LoginPageLocators.USERNAME_DISPLAY_SELECTOR)
                 == f'Welcome {username}')
-
