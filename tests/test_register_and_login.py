@@ -4,7 +4,7 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
-from pages.resgister_and_login_page import RegisterAndLoginPage
+from pages.register_and_login_page import RegisterAndLoginPage
 
 
 @pytest.mark.smoke
