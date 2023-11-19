@@ -8,13 +8,15 @@ from pages.product_page import ProductPage
 
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
-def test_product(page, user_account):
+def test_product(page, user_account, caplog):
     """
     Тестирование функциональности продукта.
 
     :param page: Экземпляр страницы для тестирования.
     :param user_account: Фикстура для регистрации и авторизации.
+    :param caplog: Журнал для записи результатов теста.
     """
+    caplog.set_level(logging.INFO)
     product_page = ProductPage(page)
 
     with allure.step("Нажимаем на продукт"):
