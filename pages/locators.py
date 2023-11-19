@@ -43,3 +43,14 @@ class SliderLocators:
     SLIDER = ".carousel-indicators"  # Селектор контейнера слайдера
     # Селекторы отдельных слайдов в слайдере
     SLIDES = ".carousel-indicators li"
+
+
+class ProductPageLocators:
+    """
+    Этот класс содержит локаторы для страницы продукта.
+    """
+    # Локатор для продукта "Sony vaio i5"
+    PRODUCTNAME = "//*[text() = 'Sony vaio i5']"
+
+    # Локатор для имени продукта на странице продукта
+    NAMEPRODUCT = "#tbodyid > h2"
