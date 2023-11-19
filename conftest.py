@@ -1,6 +1,7 @@
 import pytest
 from playwright.sync_api import sync_playwright
 
+from pages.product_page import ProductPage
 from pages.register_and_login_page import RegisterAndLoginPage
 
 
@@ -46,3 +47,14 @@ def user_account(page):
     username = 'username'
     password = 'password'
     register_and_login.register_and_login(username, password)
+    return register_and_login
+
+
+@pytest.fixture
+def add_to_cart(page):
+    """
+    Фикстура для добавления карточки в корзину.
+    """
+    product_page = ProductPage(page)
+    product_page.click_on_the_product()
+    return product_page
