@@ -75,3 +75,12 @@ class BasePage:
         :param selector: Селектор элемента, который нужно дождаться.
         """
         self.page.wait_for_selector(selector)
+
+    def check_element(self, selector):
+        """
+        Проверяет, есть ли элемент на странице, соответствующий
+        указанному селектору.
+        :param selector: Селектор элемента, которого нужно проверить.
+        """
+
+        return self.page.is_visible(selector)
