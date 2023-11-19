@@ -54,3 +54,13 @@ class ProductPageLocators:
 
     # Локатор для имени продукта на странице продукта
     NAMEPRODUCT = "#tbodyid > h2"
+
+
+class CartPageLocators:
+    """
+    Этот класс содержит локаторы для страницы корзины.
+    """
+    # Локатор для кнопки "Корзина"
+    CART = "#navbarExample > ul > li:nth-child(4) > a"
+    CART_BUTTON = "#tbodyid > div.row > div > a"
+    PRICE = "#tbodyid > tr > td:nth-child(3)"
