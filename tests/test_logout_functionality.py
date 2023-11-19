@@ -16,7 +16,6 @@ def test_logout_functionality(page, caplog, user_account):
     :param page: Экземпляр страницы для тестирования.
     :param caplog: Журнал для записи результатов теста.
     :param user_account: Fixture для регистрации и авторизации.
-    :return:
     """
     caplog.set_level(logging.INFO)
     logout_page = LogOutPage(page)

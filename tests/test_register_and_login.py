@@ -10,6 +10,12 @@ from pages.register_and_login_page import RegisterAndLoginPage
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
 def test_register_and_login_functionality(page, caplog):
+    """
+        Тестирование функциональности регистрации и входа в систему.
+
+        :param page: Экземпляр страницы для тестирования.
+        :param caplog: Журнал для записи результатов теста.
+        """
     caplog.set_level(logging.INFO)
     register_and_login_page = RegisterAndLoginPage(page)
 
