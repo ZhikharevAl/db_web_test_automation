@@ -102,3 +102,9 @@ class BasePage:
         Метод для перевода страницы на передний план.
         """
         self.page.bring_to_front()
+
+    def screenshot(self, path: str):
+        """
+        Метод для снимка экрана.
+        """
+        self.page.screenshot(path=path, full_page=True)
