@@ -84,3 +84,21 @@ class BasePage:
         """
 
         return self.page.is_visible(selector)
+
+    def scroll_down(self):
+        """
+        Прокручивает страницу вниз.
+        """
+        self.page.keyboard.press('End')
+
+    def click_button_by_role(self, name):
+        """
+        Метод для клика по кнопке с указанным именем.
+        """
+        self.page.get_by_role("button", name=name).click()
+
+    def bring_to_front(self):
+        """
+        Метод для перевода страницы на передний план.
+        """
+        self.page.bring_to_front()
