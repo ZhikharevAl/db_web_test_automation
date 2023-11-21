@@ -10,7 +10,7 @@ import logging
 @pytest.mark.ui
 @allure.severity(Severity.TRIVIAL)
 @pytest.mark.parametrize('slide_index', [0, 1, 2])
-def test_slider(page, slide_index):
+def test_slider(page, slide_index, caplog):
     """
     Тестирование слайдера на веб-странице.
 
@@ -18,6 +18,7 @@ def test_slider(page, slide_index):
     :param slide_index: Индекс слайда, который следует проверить.
 
     """
+    caplog.set_level(logging.INFO)
     slider_page = SliderPage(page)
     with allure.step("Перейти на страницу со слайдером"):
         slider_page.go_to()
