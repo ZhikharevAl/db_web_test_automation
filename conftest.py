@@ -1,11 +1,12 @@
 import pytest
 from playwright.sync_api import sync_playwright
 
+from generator.generator_person_data import generate_person_data
 from pages.product_page import ProductPage
 from pages.register_and_login_page import RegisterAndLoginPage
 
 
-@pytest.fixture
+@pytest.fixture(autouse=True)
 def browser():
     """
     Фикстура для запуска и закрытия браузера.
@@ -16,14 +17,16 @@ def browser():
         browser.close()  # Закрытие браузера после теста
 
 
-@pytest.fixture
+@pytest.fixture(autouse=True)
 def page(browser):
     """
     Фикстура для открытия и закрытия новой страницы в браузере.
     """
-    page = browser.new_page()  # Открытие новой страницы в браузере
+    context = browser.new_context()  # Создание нового контекста браузера
+    page = context.new_page()  # Открытие новой страницы в браузере
     yield page
-    page.close()  # Закрытие страницы после теста
+    context.clear_cookies()
+    page.context.close()
 
 
 @pytest.fixture(params=[
@@ -42,10 +45,11 @@ def user_account(page):
     """
     Фикстура для регистрации и входа в систему.
     """
+    person = generate_person_data()
     register_and_login = RegisterAndLoginPage(page)
     register_and_login.go_to()
-    username = 'username'
-    password = 'password'
+    username = person.name
+    password = person.password
     register_and_login.register_and_login(username, password)
     return register_and_login
 
