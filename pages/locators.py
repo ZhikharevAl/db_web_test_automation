@@ -64,3 +64,20 @@ class CartPageLocators:
     CART = "#navbarExample > ul > li:nth-child(4) > a"
     CART_BUTTON = "#tbodyid > div.row > div > a"
     PRICE = "#tbodyid > tr > td:nth-child(3)"
+
+
+class PlaceOrderPageLocators:
+    """
+        Этот класс содержит локаторы для страницы оформления заказа.
+    """
+    # Кнопка "Оформить заказ"
+    PLACE_ORDER_BUTTON = "button[data-toggle='modal']"
+    NAME = "#name"  # Поле ввода имени
+    COUNTRY = "#country"  # Поле ввода страны
+    CITY = "#city"  # Поле ввода города
+    CREDIT_CARD = "#card"  # Поле ввода номера кредитной карты
+    MONTH = "#month"  # Поле ввода месяца
+    YEAR = "#year"  # Поле ввода года
+    PURCHASE = "//*[text() = 'Purchase"  # Кнопка "Покупка"
+    # Сообщение "Thank you for your purchase!"
+    THANK_YOU = "div[data-timer='null'] h2"
