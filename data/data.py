@@ -10,3 +10,4 @@ class PersonData:
     credit_card: int = None
     month: int = None
     year: int = None
+    password: str = None
