@@ -151,3 +151,9 @@ class BasePage:
         Метод для проверки содержания текста.
         """
         self.get_by_text(text)
+
+    def focus(self, selector: str):
+        """
+        Метод для фокусировки элемента.
+        """
+        self.page.focus(selector)
