@@ -20,6 +20,12 @@ class CartPage(BasePage):
         """
         self.click_button(CartPageLocators.CART)
 
+    def wait_for_selector_element(self):
+        """
+        Метод ожидания появления элемента на странице.
+        """
+        self.wait_for_selector(CartPageLocators.PRICE)
+
     def get_price(self):
         """
         Метод для получения цены продукта в корзине.
