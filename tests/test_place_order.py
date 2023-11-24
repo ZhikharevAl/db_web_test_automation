@@ -34,12 +34,7 @@ def test_place_order(page, user_account, add_to_cart, caplog):
         logging.info("Страница оформления заказа открыта.")
 
     with allure.step("Заполняем форму оформления заказа"):
-        place_order_page.fill_name(person.name)
-        place_order_page.fill_country(person.country)
-        place_order_page.fill_city(person.city)
-        place_order_page.fill_credit_card(person.credit_card)
-        place_order_page.fill_month(person.month)
-        place_order_page.fill_year(person.year)
+        place_order_page.fill_form(person)
         place_order_page.place_order_screenshot()
         logging.info("Форма оформления заказа заполнена.")
 
