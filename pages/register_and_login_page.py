@@ -24,6 +24,7 @@ class RegisterAndLoginPage(BasePage):
         self.fill(SignUpPageLocators.USERNAME_INPUT, username)
         self.fill(SignUpPageLocators.PASSWORD_INPUT, password)
         self.click_button(SignUpPageLocators.SIGNUP_SUBMIT_BUTTON)
+        self.wait_for_selector(SignUpPageLocators.CLOSE_BUTTON)
         self.click_button(SignUpPageLocators.CLOSE_BUTTON)
 
         self.click_button(LoginPageLocators.LOGIN_BUTTON_SELECTOR)
