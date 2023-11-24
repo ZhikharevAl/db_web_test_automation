@@ -21,6 +21,8 @@ class PlaceOrderPage(BasePage):
         """
         Метод для заполнения формы данными из объекта PersonData.
         """
+        self.wait_for_selector(PlaceOrderPageLocators.NAME)
+        self.focus(PlaceOrderPageLocators.NAME)
         self.fill_name(person.name)
         self.fill_country(person.country)
         self.fill_city(person.city)
