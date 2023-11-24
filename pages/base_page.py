@@ -76,6 +76,26 @@ class BasePage:
         """
         self.page.wait_for_selector(selector)
 
+    def get_by_text(self, text: str, exact: bool = False):
+        """
+        Возвращает элемент, соответствующий указанному тексту.
+        :param text: Текст, соответствующий элементу.
+        :param exact: Является ли текст точным.
+        """
+        if exact:
+            return self.page.wait_for_selector(f"text={text}")
+        else:
+            return self.page.wait_for_selector(f"*text={text}*")
+
+    def is_visible(self, text: str, exact: bool = False):
+        """
+        Проверяет, виден ли элемент на странице, соответствующий
+        указанному тексту.
+        :param
+        """
+        element = self.get_by_text(text, exact)
+        return element.is_visible()
+
     def check_element(self, selector):
         """
         Проверяет, есть ли элемент на странице, соответствующий
@@ -108,3 +128,26 @@ class BasePage:
         Метод для снимка экрана.
         """
         self.page.screenshot(path=path, full_page=True)
+
+    def wait_for_event(self, event: str):
+        """
+        Метод для ожидания события.
+        """
+        self.page.wait_for_event(event)
+
+    def handle_popup(self):
+        """
+        Метод для обработки всплывающего окна.
+        """
+
+        self.wait_for_load_state()
+        print(self.title())
+
+    def wait_for_load_state(self):
+        self.wait_for_load_state()
+
+    def to_contain_text(self, text: str):
+        """
+        Метод для проверки содержания текста.
+        """
+        self.get_by_text(text)
