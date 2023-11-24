@@ -24,6 +24,7 @@ def test_add_to_cart(page, caplog, user_account, add_to_cart):
     with allure.step("Открываем корзину"):
         cart_page.click_cart_button()
         logging.info("Корзина открыта.")
+        cart_page.wait_for_selector_element()
     with allure.step("Проверяем, что цена отображается"):
         price = cart_page.get_price()
         assert price is not None, "Цена не отображается."
