@@ -22,6 +22,10 @@
      `pip install -U pytest-xdist` или `pip install pytest-xdist`. Если вы хотите использовать psutil для определения количества доступных процессоров, установите дополнительный пакет psutil:
      `pip install pytest-xdist[psutil]` Например: `pytest --numprocesses auto --count=100 .\tests\name_test.py`  Опция `--numprocesses` auto автоматически определяет количество процессов, равное количеству доступных процессоров, и распределяет тесты случайным образом между ними. Опция `--count=100` указывает, что каждый тест должен быть выполнен 100 раз. Путь `.\tests\name_test.py` указывает на файл с тестами, который нужно запустить.
      
+
+https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/1226ab63-5561-4161-bf12-b334187de9c9
+
+
 2. Сгенерируйте отчет Allure: `allure serve allure-results`
 
 ## Структура проекта
