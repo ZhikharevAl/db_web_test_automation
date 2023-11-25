@@ -71,7 +71,7 @@ class PlaceOrderPageLocators:
         Этот класс содержит локаторы для страницы оформления заказа.
     """
     # Кнопка "Оформить заказ"
-    PLACE_ORDER_BUTTON = "button[data-toggle='modal']"
+    PLACE_ORDER_BUTTON = "#page-wrapper > div > div.col-lg-1 > button"
     NAME = "#name"  # Поле ввода имени
     COUNTRY = "#country"  # Поле ввода страны
     CITY = "#city"  # Поле ввода города
