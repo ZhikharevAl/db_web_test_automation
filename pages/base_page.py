@@ -76,26 +76,6 @@ class BasePage:
         """
         self.page.wait_for_selector(selector)
 
-    def get_by_text(self, text: str, exact: bool = False):
-        """
-        Возвращает элемент, соответствующий указанному тексту.
-        :param text: Текст, соответствующий элементу.
-        :param exact: Является ли текст точным.
-        """
-        if exact:
-            return self.page.wait_for_selector(f"text={text}")
-        else:
-            return self.page.wait_for_selector(f"*text={text}*")
-
-    def is_visible(self, text: str, exact: bool = False):
-        """
-        Проверяет, виден ли элемент на странице, соответствующий
-        указанному тексту.
-        :param
-        """
-        element = self.get_by_text(text, exact)
-        return element.is_visible()
-
     def check_element(self, selector):
         """
         Проверяет, есть ли элемент на странице, соответствующий
@@ -146,14 +126,11 @@ class BasePage:
     def wait_for_load_state(self):
         self.wait_for_load_state()
 
-    def to_contain_text(self, text: str):
-        """
-        Метод для проверки содержания текста.
-        """
-        self.get_by_text(text)
-
     def focus(self, selector: str):
         """
         Метод для фокусировки элемента.
         """
         self.page.focus(selector)
+
+    def element_is_visible(self, selector: str):
+        return self.page.is_visible(selector)
