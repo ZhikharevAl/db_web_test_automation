@@ -1,7 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright
 
-from generator.generator_person_data import generate_person_data
 from pages.product_page import ProductPage
 from pages.register_and_login_page import RegisterAndLoginPage
 
