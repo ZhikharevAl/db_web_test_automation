@@ -45,11 +45,10 @@ def user_account(page):
     """
     Фикстура для регистрации и входа в систему.
     """
-    person = generate_person_data()
     register_and_login = RegisterAndLoginPage(page)
     register_and_login.go_to()
-    username = person.name
-    password = person.password
+    username = 'username'
+    password = 'password'
     register_and_login.register_and_login(username, password)
     return register_and_login
 
