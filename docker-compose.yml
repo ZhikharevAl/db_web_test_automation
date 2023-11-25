@@ -4,4 +4,4 @@ services:
     build: .
     volumes:
       - .:/app
-    command: pytest
+    command: ["pytest", "--numprocesses", "auto"]
