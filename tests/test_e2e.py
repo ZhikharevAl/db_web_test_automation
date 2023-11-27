@@ -10,6 +10,8 @@ class TestE2E:
     @pytest.mark.e2e
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.description("Тестирование happy path E2E.")
+    @allure.feature('E2E Testing')
+    @allure.story('Happy Path')
     def test_e2e(self, page, caplog):
         """
             Тестирование happy path E2E.

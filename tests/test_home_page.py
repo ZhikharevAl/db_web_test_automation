@@ -9,6 +9,7 @@ from pages.home_page import HomePage
 
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
+@allure.description("Тестирование заголовка домашней страницы.")
 @pytest.mark.parametrize('url, expected_title, test_type', [
     ('https://www.demoblaze.com/', 'STORE', 'positive'),
     ('https://www.demoblaze.com/', 'Wrong Title', 'negative'),

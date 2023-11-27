@@ -8,6 +8,7 @@ from pages.product_page import ProductPage
 
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
+@allure.description("Тестирование функциональности продукта.")
 def test_product(page, user_account, caplog):
     """
     Тестирование функциональности продукта.

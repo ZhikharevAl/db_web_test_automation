@@ -8,6 +8,7 @@ from pages.cart_page import CartPage
 
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
+@allure.description("Тестирование функциональности добавления в корзину.")
 def test_add_to_cart(page, caplog, user_account, add_to_cart):
     """
     Тестирование функциональности добавления в корзину.

@@ -9,6 +9,7 @@ from pages.signup_page import SignUpPage
 
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
+@allure.description('Тестирование функциональности регистрации')
 @pytest.mark.parametrize('username, password, test_type', [
     ('valid_username', 'valid_password', 'positive'),
     ('invalid_username', 'valid_password', 'negative'),

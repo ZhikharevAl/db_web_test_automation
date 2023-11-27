@@ -11,6 +11,7 @@ from pages.place_order_page import PlaceOrderPage
 
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
+@allure.title("Тестирование функциональности оформления заказа")
 def test_place_order(page, user_account, add_to_cart, caplog):
     """
     Тестирование функциональности оформления заказа.

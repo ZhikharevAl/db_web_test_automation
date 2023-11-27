@@ -9,6 +9,7 @@ from pages.logout_page import LogOutPage
 
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
+@allure.description("Тестирование функциональности выхода из системы.")
 def test_logout_functionality(page, caplog, user_account):
     """
     Тестирование функциональности выхода из системы.

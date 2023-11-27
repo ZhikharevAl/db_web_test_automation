@@ -10,6 +10,7 @@ from tests.test_signup import test_signup_functionality
 
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
+@allure.description("Тестирование функциональности входа.")
 @pytest.mark.parametrize('username, password, test_type', [
     ('valid_username', 'valid_password', 'positive'),
     ('invalid_username', 'valid_password', 'negative'),
@@ -17,6 +18,14 @@ from tests.test_signup import test_signup_functionality
     ('invalid_username', 'invalid_password', 'negative'),
 ])
 def test_login_functionality(page, username, password, test_type, caplog):
+    """
+    Тестирование функциональности входа.
+    :param page: Экземпляр страницы для тестирования.
+    :param username: Имя пользователя для регистрации.
+    :param password: Пароль для регистрации.
+    :param test_type: Тип теста ('positive' или 'negative').
+    :param caplog: Журнал для записи результатов теста.
+    """
     caplog.set_level(logging.INFO)
     login_page = LoginPage(page)
     username = 'username'

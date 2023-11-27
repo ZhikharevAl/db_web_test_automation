@@ -9,6 +9,7 @@ import logging
 
 @pytest.mark.ui
 @allure.severity(Severity.TRIVIAL)
+@allure.description("Тестирование слайдера на веб-странице.")
 @pytest.mark.parametrize('slide_index', [0, 1, 2])
 def test_slider(page, slide_index, caplog):
     """
