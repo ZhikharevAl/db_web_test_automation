@@ -14,6 +14,7 @@ def test_add_to_cart(page, base_url, caplog, user_account, add_to_cart):
     Тестирование функциональности добавления в корзину.
 
     :param page: Экземпляр страницы для тестирования.
+    :param base_url: URL-адрес домашней страницы.
     :param user_account: Фикстура для регистрации и авторизации.
     :param add_to_cart: Фикстура для добавления товара в корзину.
     """

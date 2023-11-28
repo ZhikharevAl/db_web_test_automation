@@ -16,6 +16,7 @@ def test_place_order(page, base_url, user_account, add_to_cart, caplog):
     """
     Тестирование функциональности оформления заказа.
     :param page: Экземпляр страницы для тестирования.
+    :param base_url: URL-адрес домашней страницы.
     :param user_account: Фикстура для регистрации и входа в систему.
     :param add_to_cart: Фикстура для добавления карточки в корзину.
     :param caplog: Журнал для записи результатов теста.

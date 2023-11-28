@@ -22,6 +22,7 @@ def test_signup_functionality(page, base_url, username, password,
     Тестирование функциональности регистрации.
 
     :param page: Экземпляр страницы для тестирования.
+    :param base_url: URL-адрес домашней страницы.
     :param username: Имя пользователя для регистрации.
     :param password: Пароль для регистрации.
     :param test_type: Тип теста ('positive' или 'negative').

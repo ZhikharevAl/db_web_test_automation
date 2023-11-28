@@ -15,6 +15,7 @@ def test_logout_functionality(page, base_url, caplog, user_account):
     Тестирование функциональности выхода из системы.
 
     :param page: Экземпляр страницы для тестирования.
+    :param base_url: URL-адрес домашней страницы.
     :param caplog: Журнал для записи результатов теста.
     :param user_account: Fixture для регистрации и авторизации.
     """

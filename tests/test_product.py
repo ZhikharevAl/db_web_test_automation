@@ -14,6 +14,7 @@ def test_product(page, base_url, user_account, caplog):
     Тестирование функциональности продукта.
 
     :param page: Экземпляр страницы для тестирования.
+    :param base_url: URL-адрес домашней страницы.
     :param user_account: Фикстура для регистрации и авторизации.
     :param caplog: Журнал для записи результатов теста.
     """

@@ -22,6 +22,7 @@ def test_login_functionality(page, base_url, username, password,
     """
     Тестирование функциональности входа.
     :param page: Экземпляр страницы для тестирования.
+    :param base_url: URL-адрес домашней страницы.
     :param username: Имя пользователя для регистрации.
     :param password: Пароль для регистрации.
     :param test_type: Тип теста ('positive' или 'negative').

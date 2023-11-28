@@ -16,6 +16,7 @@ def test_register_and_login_functionality(page, base_url, caplog):
         Тестирование функциональности регистрации и входа в систему.
 
         :param page: Экземпляр страницы для тестирования.
+        :param base_url: URL-адрес домашней страницы.
         :param caplog: Журнал для записи результатов теста.
         """
     caplog.set_level(logging.INFO)

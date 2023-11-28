@@ -16,6 +16,7 @@ def test_slider(page, base_url, slide_index, caplog):
     Тестирование слайдера на веб-странице.
 
     :param page: Экземпляр страницы для тестирования.
+    :param base_url: URL-адрес домашней страницы.
     :param slide_index: Индекс слайда, который следует проверить.
 
     """
