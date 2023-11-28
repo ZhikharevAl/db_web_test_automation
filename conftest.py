@@ -5,7 +5,7 @@ from pages.product_page import ProductPage
 from pages.register_and_login_page import RegisterAndLoginPage
 
 
-@pytest.fixture(autouse=True)
+@pytest.fixture
 def browser():
     """
     Фикстура для запуска и закрытия браузера.
@@ -16,7 +16,7 @@ def browser():
         browser.close()  # Закрытие браузера после теста
 
 
-@pytest.fixture(autouse=True)
+@pytest.fixture
 def page(browser):
     """
     Фикстура для открытия и закрытия новой страницы в браузере.
@@ -28,24 +28,13 @@ def page(browser):
     page.context.close()
 
 
-@pytest.fixture(params=[
-    ('https://www.demoblaze.com/', 'STORE', 'positive'),
-    ('https://www.demoblaze.com/', 'Wrong Title', 'negative'),
-])
-def url(request):
-    """
-    Фикстура для предоставления различных URL-адресов и ожидаемых результатов.
-    """
-    return request.param
-
-
 @pytest.fixture
-def user_account(page):
+def user_account(page, base_url):
     """
     Фикстура для регистрации и входа в систему.
     """
-    register_and_login = RegisterAndLoginPage(page)
-    register_and_login.go_to()
+    register_and_login = RegisterAndLoginPage(page, base_url)
+    register_and_login.go_to(base_url)
     username = 'username'
     password = 'password'
     register_and_login.register_and_login(username, password)
@@ -53,10 +42,10 @@ def user_account(page):
 
 
 @pytest.fixture
-def add_to_cart(page):
+def add_to_cart(page, base_url):
     """
     Фикстура для добавления карточки в корзину.
     """
-    product_page = ProductPage(page)
+    product_page = ProductPage(page, base_url)
     product_page.click_on_the_product()
     return product_page
