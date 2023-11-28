@@ -1,4 +1,3 @@
-
 from pages.base_page import BasePage
 from pages.locators import (SignUpPageLocators, LoginPageLocators,
                             ProductPageLocators, CartPageLocators,
@@ -7,9 +6,6 @@ from pages.place_order_page import PlaceOrderPage
 
 
 class E2EPage(PlaceOrderPage, BasePage):
-
-    def go_to_e2e(self):
-        self.go_to()
 
     def check_product_store_text(self):
         self.title()

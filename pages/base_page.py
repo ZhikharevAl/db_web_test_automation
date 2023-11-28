@@ -6,9 +6,8 @@ class BasePage:
     Базовый класс страницы. Этот класс содержит общие методы,
     которые могут быть использованы на любой странице.
     """
-    URL = "https://www.demoblaze.com/"
 
-    def __init__(self, page: Page):
+    def __init__(self, page: Page, base_url: str):
         """
         Инициализация экземпляра BasePage.
 
@@ -16,12 +15,13 @@ class BasePage:
         использоваться для взаимодействия со страницей.
         """
         self.page = page
+        self.base_url = base_url
 
-    def go_to(self):
+    def go_to(self, base_url):
         """
         Переходит на URL, указанный в self.URL.
         """
-        self.page.goto(self.URL)
+        self.page.goto(self.base_url)
 
     def click_button(self, selector: str):
         """

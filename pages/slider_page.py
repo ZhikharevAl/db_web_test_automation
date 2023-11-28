@@ -1,4 +1,3 @@
-
 from pages.base_page import BasePage
 from pages.locators import SliderLocators
 
@@ -8,12 +7,6 @@ class SliderPage(BasePage):
     Класс SliderPage наследует от базового класса BasePage и представляет собой
     страницу со слайдером. Он содержит методы для взаимодействия со слайдером.
     """
-
-    def go_to(self):
-        """
-        Переход на страницу со слайдером.
-        """
-        self.page.goto(self.URL)
 
     def get_slides(self):
         """

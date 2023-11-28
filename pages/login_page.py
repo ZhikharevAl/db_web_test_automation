@@ -16,7 +16,6 @@ class LoginPage(BasePage):
         :param username: Имя пользователя для входа в систему.
         :param password: Пароль для входа в систему.
         """
-        self.go_to()
         self.click_button(LoginPageLocators.LOGIN_BUTTON_SELECTOR)
         self.fill(LoginPageLocators.USERNAME_FIELD_SELECTOR, username)
         self.fill(LoginPageLocators.PASSWORD_FIELD_SELECTOR, password)
