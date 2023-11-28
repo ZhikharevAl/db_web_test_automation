@@ -61,9 +61,9 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.parallel }}" = "true" ]
           then
-            pytest --numprocesses auto --alluredir=allure-results
+            pytest --base-url https://demoblaze.com/ --numprocesses auto --alluredir=allure-results
           else
-            pytest --alluredir=allure-results
+            pytest --base-url https://demoblaze.com/ --alluredir=allure-results
           fi
 
       - name: Store allure history
