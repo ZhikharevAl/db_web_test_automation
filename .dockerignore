@@ -6,6 +6,5 @@ __pycache__
 .coverage
 htmlcov
 .idea
-.vscode
 node_modules
 playwright
