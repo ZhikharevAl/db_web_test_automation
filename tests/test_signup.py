@@ -16,7 +16,8 @@ from pages.signup_page import SignUpPage
     ('valid_username', 'invalid_password', 'negative'),
     ('invalid_username', 'invalid_password', 'negative'),
 ])
-def test_signup_functionality(page, base_url, username, password, test_type, caplog):
+def test_signup_functionality(page, base_url, username, password,
+                              test_type, caplog):
     """
     Тестирование функциональности регистрации.
 

@@ -17,7 +17,8 @@ from tests.test_signup import test_signup_functionality
     ('valid_username', 'invalid_password', 'negative'),
     ('invalid_username', 'invalid_password', 'negative'),
 ])
-def test_login_functionality(page, base_url, username, password, test_type, caplog):
+def test_login_functionality(page, base_url, username, password,
+                             test_type, caplog):
     """
     Тестирование функциональности входа.
     :param page: Экземпляр страницы для тестирования.

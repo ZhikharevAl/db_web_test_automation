@@ -9,7 +9,8 @@ from pages.register_and_login_page import RegisterAndLoginPage
 
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
-@allure.description("Тестирование функциональности регистрации и входа в систему")
+@allure.description("Тестирование функциональности регистрации и "
+                    "входа в систему")
 def test_register_and_login_functionality(page, base_url, caplog):
     """
         Тестирование функциональности регистрации и входа в систему.
