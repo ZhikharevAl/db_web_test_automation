@@ -9,7 +9,7 @@ from pages.cart_page import CartPage
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
 @allure.description("Тестирование функциональности добавления в корзину.")
-def test_add_to_cart(page, caplog, user_account, add_to_cart):
+def test_add_to_cart(page, base_url, caplog, user_account, add_to_cart):
     """
     Тестирование функциональности добавления в корзину.
 
@@ -18,7 +18,7 @@ def test_add_to_cart(page, caplog, user_account, add_to_cart):
     :param add_to_cart: Фикстура для добавления товара в корзину.
     """
     caplog.set_level(logging.INFO)
-    cart_page = CartPage(page)
+    cart_page = CartPage(page, base_url)
     with allure.step("Добавляем продукт в корзину"):
         cart_page.click_add_to_cart()
         logging.info("Продукт добавлен в корзину.")

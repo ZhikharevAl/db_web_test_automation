@@ -12,7 +12,7 @@ from pages.place_order_page import PlaceOrderPage
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
 @allure.title("Тестирование функциональности оформления заказа")
-def test_place_order(page, user_account, add_to_cart, caplog):
+def test_place_order(page, base_url, user_account, add_to_cart, caplog):
     """
     Тестирование функциональности оформления заказа.
     :param page: Экземпляр страницы для тестирования.
@@ -22,8 +22,8 @@ def test_place_order(page, user_account, add_to_cart, caplog):
     """
     caplog.set_level(logging.INFO)
     person = generate_person_data()
-    place_order_page = PlaceOrderPage(page)
-    cart_page = CartPage(page)
+    place_order_page = PlaceOrderPage(page, base_url)
+    cart_page = CartPage(page, base_url)
 
     with allure.step("Добавляем товар в корзину"):
         cart_page.click_add_to_cart()

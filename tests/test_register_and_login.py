@@ -10,7 +10,7 @@ from pages.register_and_login_page import RegisterAndLoginPage
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
 @allure.description("Тестирование функциональности регистрации и входа в систему")
-def test_register_and_login_functionality(page, caplog):
+def test_register_and_login_functionality(page, base_url, caplog):
     """
         Тестирование функциональности регистрации и входа в систему.
 
@@ -18,10 +18,10 @@ def test_register_and_login_functionality(page, caplog):
         :param caplog: Журнал для записи результатов теста.
         """
     caplog.set_level(logging.INFO)
-    register_and_login_page = RegisterAndLoginPage(page)
+    register_and_login_page = RegisterAndLoginPage(page, base_url)
 
     with allure.step("Открываем страницу регистрации"):
-        register_and_login_page.go_to()
+        register_and_login_page.go_to(base_url)
         logging.info("Страница регистрации открыта.")
     with allure.step("Регистрируем нового пользователя"):
         username = 'username'

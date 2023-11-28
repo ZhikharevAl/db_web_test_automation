@@ -10,7 +10,7 @@ from pages.logout_page import LogOutPage
 @pytest.mark.smoke
 @allure.severity(Severity.CRITICAL)
 @allure.description("Тестирование функциональности выхода из системы.")
-def test_logout_functionality(page, caplog, user_account):
+def test_logout_functionality(page, base_url, caplog, user_account):
     """
     Тестирование функциональности выхода из системы.
 
@@ -19,7 +19,7 @@ def test_logout_functionality(page, caplog, user_account):
     :param user_account: Fixture для регистрации и авторизации.
     """
     caplog.set_level(logging.INFO)
-    logout_page = LogOutPage(page)
+    logout_page = LogOutPage(page, base_url)
     logout_page.log_out()
     with allure.step("Проверяем, что вышли из системы"):
         is_logged_out = logout_page.is_logged_out()

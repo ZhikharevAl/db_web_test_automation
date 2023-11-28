@@ -11,7 +11,7 @@ import logging
 @allure.severity(Severity.TRIVIAL)
 @allure.description("Тестирование слайдера на веб-странице.")
 @pytest.mark.parametrize('slide_index', [0, 1, 2])
-def test_slider(page, slide_index, caplog):
+def test_slider(page, base_url, slide_index, caplog):
     """
     Тестирование слайдера на веб-странице.
 
@@ -20,9 +20,9 @@ def test_slider(page, slide_index, caplog):
 
     """
     caplog.set_level(logging.INFO)
-    slider_page = SliderPage(page)
+    slider_page = SliderPage(page, base_url)
     with allure.step("Перейти на страницу со слайдером"):
-        slider_page.go_to()
+        slider_page.go_to(base_url)
         logging.info("Страница со слайдером открыта.")
     with allure.step("Кликнуть на слайд"):
         slider_page.click_slide(slide_index)

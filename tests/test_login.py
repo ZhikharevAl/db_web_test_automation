@@ -17,7 +17,7 @@ from tests.test_signup import test_signup_functionality
     ('valid_username', 'invalid_password', 'negative'),
     ('invalid_username', 'invalid_password', 'negative'),
 ])
-def test_login_functionality(page, username, password, test_type, caplog):
+def test_login_functionality(page, base_url, username, password, test_type, caplog):
     """
     Тестирование функциональности входа.
     :param page: Экземпляр страницы для тестирования.
@@ -27,15 +27,15 @@ def test_login_functionality(page, username, password, test_type, caplog):
     :param caplog: Журнал для записи результатов теста.
     """
     caplog.set_level(logging.INFO)
-    login_page = LoginPage(page)
+    login_page = LoginPage(page, base_url)
     username = 'username'
     password = 'password'
 
     with allure.step("Открываем страницу входа"):
-        login_page.go_to()
+        login_page.go_to(base_url)
     with (allure.step("Регистрируем нового пользователя")):
         signup_successful = \
-            test_signup_functionality(page, username,
+            test_signup_functionality(page, base_url, username,
                                       password, test_type='positive',
                                       caplog=caplog)
     if signup_successful:
