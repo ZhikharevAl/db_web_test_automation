@@ -1,7 +1,9 @@
 version: '3'
 services:
   myservice:
-    build: .
-    volumes:
-      - .:/app
-    command: ["pytest", "--numprocesses", "auto"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - BASE_URL=https://www.demoblaze.com/
+
