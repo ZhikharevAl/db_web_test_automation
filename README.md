@@ -25,8 +25,19 @@
 
 https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/1226ab63-5561-4161-bf12-b334187de9c9
 
+- `pytest --base-url https://demoblaze.com/`
+> Плагин [pytest-base-url](https://github.com/pytest-dev/pytest-base-url) - это простой плагин для pytest, который предоставляет опциональный базовый URL через командную строку или файл конфигурации1.
+    Вы можете установить pytest-base-url с помощью pip:
+    `pip install pytest-base-url`
+     После установки вы можете указать базовый URL в командной строке:
+      `pytest --base-url https://demoblaze.com/`
 
-2. Сгенерируйте отчет Allure: `allure serve allure-results`
+    Или вы можете указать базовый URL в файле конфигурации:
+
+      [pytest]
+      base_url = https://demoblaze.com/
+
+2. Сгенерируйте отчет Allure: `allure serve allure-results` 
 
 ## Структура проекта
 
