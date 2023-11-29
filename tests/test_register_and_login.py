@@ -4,6 +4,7 @@ from allure_commons.types import Severity
 
 from logging_config import configure_logger
 from pages.register_and_login_page import RegisterAndLoginPage
+from generator.generator_person_data import generate_person_data
 
 logger = configure_logger(__name__, 'test.log')
 
@@ -20,6 +21,7 @@ def test_register_and_login_functionality(page, base_url):
     :param base_url: URL-адрес домашней страницы.
     """
     register_and_login_page = RegisterAndLoginPage(page, base_url)
+    person = generate_person_data()
 
     try:
         with allure.step(f"Открываем страницу регистрации ({base_url})"):
@@ -27,8 +29,8 @@ def test_register_and_login_functionality(page, base_url):
             logger.info("Страница регистрации открыта.")
 
         with allure.step("Регистрируем нового пользователя"):
-            username = 'username'
-            password = 'password'
+            username = person.name
+            password = person.password
             register_and_login_page.register_and_login(username, password)
             logger.info(f"Зарегистрирован новый пользователь: {username}")
 

@@ -3,6 +3,7 @@ import allure
 
 from allure_commons.types import Severity
 
+from generator.generator_person_data import generate_person_data
 from pages.login_page import LoginPage
 from tests.test_signup import test_signup_functionality
 from logging_config import configure_logger
@@ -29,8 +30,9 @@ def test_login_functionality(page, base_url, username, password, test_type):
     :param test_type: Тип теста ('positive' или 'negative').
     """
     login_page = LoginPage(page, base_url)
-    username = 'username'
-    password = 'password'
+    person = generate_person_data()
+    username = person.name
+    password = person.password
 
     try:
         with allure.step("Открываем страницу входа"):
