@@ -23,7 +23,7 @@
      `pip install pytest-xdist[psutil]` Например: `pytest --numprocesses auto --count=100 .\tests\name_test.py`  Опция `--numprocesses auto` автоматически определяет количество процессов, равное количеству доступных процессоров, и распределяет тесты случайным образом между ними. Опция `--count=100` указывает, что каждый тест должен быть выполнен 100 раз. Путь `.\tests\name_test.py` указывает на файл с тестами, который нужно запустить.
      
 
-https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/1226ab63-5561-4161-bf12-b334187de9c9
+
 
 - `pytest --base-url https://demoblaze.com/`
 > Плагин [pytest-base-url](https://github.com/pytest-dev/pytest-base-url) - это простой плагин для pytest, который предоставляет опциональный базовый URL через командную строку или файл конфигурации1.
@@ -36,6 +36,7 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/1226ab63-5
 
       [pytest]
       base_url = https://demoblaze.com/
+      
 -     Если вы хотите, чтобы тест автоматически перезапускался при падении, вы можете использовать плагин pytest-rerunfailures. Этот плагин позволяет автоматически перезапускать тесты, которые не прошли.
       Для установки плагина выполните следующую команду:
 
@@ -44,7 +45,7 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/1226ab63-5
         
         [pytest]
         addopts = --reruns=5
-![Screenshot 2023-11-29 031825](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/31d1e260-2bbf-488b-842c-a8724b906532)
+
 
 
 2. Сгенерируйте отчет Allure: `allure serve allure-results` 
