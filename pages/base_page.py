@@ -17,7 +17,7 @@ class BasePage:
         self.page = page
         self.base_url = base_url
 
-    def go_to(self, base_url):
+    def go_to(self, base_url: str):
         """
         Переходит на URL, указанный в self.URL.
         """
