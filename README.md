@@ -44,6 +44,7 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/1226ab63-5
         
         [pytest]
         addopts = --reruns=5
+![Screenshot 2023-11-29 031825](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/31d1e260-2bbf-488b-842c-a8724b906532)
 
 
 2. Сгенерируйте отчет Allure: `allure serve allure-results` 
