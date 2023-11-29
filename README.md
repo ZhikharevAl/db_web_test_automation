@@ -36,19 +36,15 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/1226ab63-5
 
       [pytest]
       base_url = https://demoblaze.com/
+-     Если вы хотите, чтобы тест автоматически перезапускался при падении, вы можете использовать плагин pytest-rerunfailures. Этот плагин позволяет автоматически перезапускать тесты, которые не прошли.
+      Для установки плагина выполните следующую команду:
 
--   > Если вы хотите, чтобы тест автоматически перезапускался при падении, вы можете использовать плагин [pytest-rerunfailures](https://github.com/pytest-dev/pytest-rerunfailures). Этот плагин позволяет автоматически перезапускать тесты, которые не прошли.
+     > `pip install pytest-rerunfailures`
+        Затем в файле pytest.ini укажите следующее:
+        
+        [pytest]
+        addopts = --reruns=5
 
-Для установки плагина выполните следующую команду:
-
-```bash
-pip install pytest-rerunfailures
-```
-Затем в файле pytest.ini укажите следующее:
-```ini
-[pytest]
-addopts = --reruns 5
-```
 
 2. Сгенерируйте отчет Allure: `allure serve allure-results` 
 
