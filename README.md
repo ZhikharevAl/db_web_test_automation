@@ -13,39 +13,55 @@
 
 ## Запуск тестов 
 
-1. Запустите тесты: 
+1. **Запустите тесты:**
    - `pytest`
    - `pytest --numprocesses auto`
-   
-     > Команда `pytest --numprocesses auto` используется для запуска тестов в параллельном режиме с помощью плагина pytest-xdist.
-     Для установки плагина pytest-xdist, вы можете использовать следующую команду в командной строке
-     `pip install -U pytest-xdist` или `pip install pytest-xdist`. Если вы хотите использовать psutil для определения количества доступных процессоров, установите дополнительный пакет psutil:
-     `pip install pytest-xdist[psutil]` Например: `pytest --numprocesses auto --count=100 .\tests\name_test.py`  Опция `--numprocesses auto` автоматически определяет количество процессов, равное количеству доступных процессоров, и распределяет тесты случайным образом между ними. Опция `--count=100` указывает, что каждый тест должен быть выполнен 100 раз. Путь `.\tests\name_test.py` указывает на файл с тестами, который нужно запустить.
-     
 
-https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/1226ab63-5561-4161-bf12-b334187de9c9
+   > Команда `pytest --numprocesses auto` используется для запуска тестов в параллельном режиме с помощью плагина pytest-xdist. Для установки плагина pytest-xdist, выполните следующую команду в командной строке:
+   > ```
+   > pip install -U pytest-xdist
+   > ```
+   > Или
+   > ```
+   > pip install pytest-xdist
+   > ```
+   > Если вы хотите использовать psutil для определения количества доступных процессоров, установите дополнительный пакет psutil:
+   > ```
+   > pip install pytest-xdist[psutil]
+   > ```
+   > Например:
+   > ```
+   > pytest --numprocesses auto --count=100 .\tests\name_test.py
+   > ```
+   > Опция `--numprocesses auto` автоматически определяет количество процессов, равное количеству доступных процессоров, и распределяет тесты случайным образом между ними. Опция `--count=100` указывает, что каждый тест должен быть выполнен 100 раз. Путь `.\tests\name_test.py` указывает на файл с тестами, который нужно запустить.
 
-- `pytest --base-url https://demoblaze.com/`
-> Плагин [pytest-base-url](https://github.com/pytest-dev/pytest-base-url) - это простой плагин для pytest, который предоставляет опциональный базовый URL через командную строку или файл конфигурации1.
-    Вы можете установить pytest-base-url с помощью pip:
-    `pip install pytest-base-url`
-     После установки вы можете указать базовый URL в командной строке:
-      `pytest --base-url https://demoblaze.com/`
+2. **Запуск с указанием базового URL:**
+   - `pytest --base-url https://demoblaze.com/`
 
-    Или вы можете указать базовый URL в файле конфигурации:
+   > Плагин [pytest-base-url](https://github.com/pytest-dev/pytest-base-url) - это простой плагин для pytest, который предоставляет опциональный базовый URL через командную строку или файл конфигурации1. Вы можете установить pytest-base-url с помощью pip:
+   > ```
+   > pip install pytest-base-url
+   > ```
+   > После установки вы можете указать базовый URL в командной строке:
+   > ```
+   > pytest --base-url https://demoblaze.com/
+   > ```
+   > Или вы можете указать базовый URL в файле конфигурации:
+   > ```ini
+   > [pytest]
+   > base_url = https://demoblaze.com/
+   > ```
 
-      [pytest]
-      base_url = https://demoblaze.com/
--     Если вы хотите, чтобы тест автоматически перезапускался при падении, вы можете использовать плагин pytest-rerunfailures. Этот плагин позволяет автоматически перезапускать тесты, которые не прошли.
-      Для установки плагина выполните следующую команду:
-
-     > `pip install pytest-rerunfailures`
-        Затем в файле pytest.ini укажите следующее:
-        
-        [pytest]
-        addopts = --reruns=5
-![Screenshot 2023-11-29 031825](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/31d1e260-2bbf-488b-842c-a8724b906532)
-
+3. **Автоматический перезапуск тестов при падении:**
+   > Если вы хотите, чтобы тест автоматически перезапускался при падении, вы можете использовать плагин [pytest-rerunfailures](https://github.com/pytest-dev/pytest-rerunfailures). Этот плагин позволяет автоматически перезапускать тесты, которые не прошли. Для установки плагина выполните следующую команду:
+   > ```
+   > pip install pytest-rerunfailures
+   > ```
+   > Затем в файле `pytest.ini` укажите следующее:
+   > ```ini
+   > [pytest]
+   > addopts = --reruns=5
+   > ```
 
 2. Сгенерируйте отчет Allure: `allure serve allure-results` 
 
