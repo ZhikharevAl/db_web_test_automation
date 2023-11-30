@@ -81,3 +81,15 @@ class PlaceOrderPageLocators:
     PURCHASE = "//*[text() = 'Purchase"  # Кнопка "Покупка"
     # Сообщение "Thank you for your purchase!"
     THANK_YOU = "div[data-timer='null'] h2"
+
+
+class PairwisePageLocators:
+    """
+    Этот класс содержит локаторы для pairwise теста.
+    """
+
+    PHONES = ("link", "Phones")
+    LAPTOPS = ("link", "Laptops")
+    MONITORS = ("link", "Monitors")
+    SONYXPERIAZ5 = ("link", "Sony xperia z5")
+    SONYXPERIAZ5_TEXT = ("heading", "Sony xperia z5")
