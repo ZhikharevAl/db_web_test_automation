@@ -134,3 +134,12 @@ class BasePage:
 
     def element_is_visible(self, selector: str):
         return self.page.is_visible(selector)
+
+    def click_get_by_role(self, role, name):
+        self.page.get_by_role(role, name=name).click()
+
+    def get_by_role(self, role, name):
+        return self.page.get_by_role(role, name=name)
+
+    def text_by_role(self, role, name):
+        return self.get_by_role(role, name).inner_text()
