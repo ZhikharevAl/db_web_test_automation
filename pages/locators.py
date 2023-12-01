@@ -93,3 +93,20 @@ class PairwisePageLocators:
     MONITORS = ("link", "Monitors")
     SONYXPERIAZ5 = ("link", "Sony xperia z5")
     SONYXPERIAZ5_TEXT = ("heading", "Sony xperia z5")
+    SONYXPERIAZ5_TEXT_CART = ("cell", "Sony xperia z5")
+    DELL = ("link", "Dell 15.6 Inch")
+    ADD_TO_CART = ("link", "Add to cart")
+    CART = "a[id='cartur']"
+    DELL_NAME = "//*[text() = '2017 Dell 15.6 Inch']"
+    DELL_NAME_TEXT = ("heading", "Dell 15.6 Inch")
+    PLACE_ORDER = ("button", "Place Order")
+    NAME = "Total:"
+    COUNTRY = "Country:"
+    CITY = "City:"
+    CREDIT_CARD = "Credit Card:"
+    MONTH = "Month:"
+    YEAR = "Year:"
+    PURCHASE = ("button", "Purchase")
+    THANK_YOU = ("heading", "Thank you for your purchase!")
+    ASUS_MONITOR = "link", "ASUS Full HD"
+    ASUS_MONITOR_TEXT = "//*[text() = 'ASUS Full HD']"
