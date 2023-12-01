@@ -142,4 +142,26 @@ class BasePage:
         return self.page.get_by_role(role, name=name)
 
     def text_by_role(self, role, name):
+        """
+        Retrieves the inner text of an element by its role and name.
+
+        Args:
+            role (str): The role of the element.
+            name (str): The name of the element.
+
+        Returns:
+            str: The inner text of the element.
+        """
         return self.get_by_role(role, name).inner_text()
+
+    def get_by_label(self, label):
+        """
+        Retrieves an element by its label.
+
+        Args:
+            label (str): The label of the element.
+
+        Returns:
+            WebElement: The element with the specified label.
+        """
+        return self.page.get_by_label(label)
