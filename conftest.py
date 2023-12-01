@@ -6,13 +6,13 @@ from pages.product_page import ProductPage
 from pages.register_and_login_page import RegisterAndLoginPage
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def browser():
     """
     Фикстура для запуска и закрытия браузера.
     """
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)  # Запуск браузера
+        browser = p.chromium.launch(headless=False)  # Запуск браузера
         yield browser
         browser.close()  # Закрытие браузера после теста
 
@@ -51,3 +51,17 @@ def add_to_cart(page, base_url):
     product_page = ProductPage(page, base_url)
     product_page.click_on_the_product()
     return product_page
+
+
+@pytest.fixture(params=[True, False])
+def user_account_authorized(request, page, base_url):
+    if request.param:
+        register_and_login = RegisterAndLoginPage(page, base_url)
+        person = generate_person_data()
+        register_and_login.go_to(base_url)
+        username = person.name
+        password = person.password
+        register_and_login.register_and_login(username, password)
+        return register_and_login
+    else:
+        return None
