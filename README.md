@@ -8,7 +8,7 @@
 
 1. Установите Python: `https://www.python.org/downloads/`
 2. Клонируйте репозиторий: `git clone https://github.com/ZhikharevAl/db_web_test_automation.git`
-3. Перейдите в директорию проекта: `cd db_web_test_automation`
+3. Активируйте виртуальную среду: `source .venv/Scripts/activate`
 4. Установите зависимости: `pip install -r requirements.txt`
 
 ## Запуск тестов 
