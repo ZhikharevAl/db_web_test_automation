@@ -91,7 +91,7 @@ class BasePage:
         """
         self.page.keyboard.press('End')
 
-    def click_button_by_role(self, name):
+    def click_button_by_role(self, name: str) -> None:
         """
         Метод для клика по кнопке с указанным именем.
         """
