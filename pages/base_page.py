@@ -85,7 +85,7 @@ class BasePage:
 
         return self.page.is_visible(selector)
 
-    def scroll_down(self):
+    def scroll_down(self) -> None:
         """
         Прокручивает страницу вниз.
         """
