@@ -85,8 +85,8 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/fd486f61-f
 - `pytest.ini` - файл с конфигурацией Pytest
 - `requirements.txt` - файл с зависимостями проекта
 
-
-
+## Документация
+Описание тестов и документация можно найти [здесь](https://github.com/ZhikharevAl/db_web_test_automation/docs/TESTS.md).
 ## Лицензия
 
 Этот проект лицензирован в соответствии с условиями лицензии MIT - см. Файл LICENSE.md для получения дополнительной информации.
