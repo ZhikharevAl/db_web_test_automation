@@ -87,7 +87,8 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/fd486f61-f
 
 ## Документация
 Описание тестов и документация можно найти [здесь](https://github.com/ZhikharevAl/db_web_test_automation/blob/master/docs/TESTS.md).
-Pairwise Тест:
+
+###Pairwise Тест:
 ![Screenshot 2023-12-27 185417](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/eef58ea5-62fb-47e5-8222-93c750683260)
 
 ## Лицензия
