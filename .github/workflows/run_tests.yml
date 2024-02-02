@@ -108,3 +108,21 @@ jobs:
         - name: Deploy to GitHub Pages
           id: deployment
           uses: actions/deploy-pages@v1.2.9
+        - name: Send success message to Telegram
+          if: success()
+          run: |
+            curl --location 'https://api.telegram.org/bot${{ secrets.TG }}/sendMessage' \
+            --header 'Content-Type: application/json' \
+            --data '{
+                "chat_id": 360370142,
+                "text": "Tests passed successfully"
+            }'
+        - name: Send failure message to Telegram
+          if: failure()
+          run: |
+            curl --location 'https://api.telegram.org/bot${{ secrets.TG }}/sendMessage' \
+            --header 'Content-Type: application/json' \
+            --data '{
+                "chat_id": 360370142,
+                "text": "Tests failed"
+            }'
