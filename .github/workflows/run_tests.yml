@@ -67,7 +67,7 @@ jobs:
           fi
 
       - name: Store allure history
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path:
@@ -79,17 +79,17 @@ jobs:
     needs: Test
     name: Generate report
     steps:
-      - uses: actions/setup-java@v3
+      - uses: actions/setup-java@v4
         with:
           distribution: 'microsoft'
           java-version: '17'
       - run: sudo wget https://github.com/allure-framework/allure2/releases/download/2.23.1/allure-2.23.1.tgz && 
              sudo tar -zxvf allure-2.23.1.tgz -C /opt/ && sudo ln -s /opt/allure-2.23.1/bin/allure /usr/bin/allure
       - name: Download all workflow run artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
       - run: allure generate -c allure-results -o _site
       - name: Store generated report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: _site
           path:
@@ -102,12 +102,12 @@ jobs:
       name: Report publication
       steps:
         - name: Download all workflow run artifacts
-          uses: actions/download-artifact@v3
+          uses: actions/download-artifact@v4
         - name: Upload Pages artifact
-          uses: actions/upload-pages-artifact@v2
+          uses: actions/upload-pages-artifact@v3
         - name: Deploy to GitHub Pages
           id: deployment
-          uses: actions/deploy-pages@v1.2.9
+          uses: actions/deploy-pages@v4
         - name: Send success message to Telegram
           if: success()
           run: |
