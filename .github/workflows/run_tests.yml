@@ -115,7 +115,7 @@ jobs:
             --header 'Content-Type: application/json' \
             --data '{
                 "chat_id": 360370142,
-                "text": "Tests passed successfully. Report: https://zhikhareval.github.io/db_web_test_automation/"
+                "text": "🎉 Tests passed successfully. Report: https://zhikhareval.github.io/db_web_test_automation"
             }'
         - name: Send failure message to Telegram
           if: failure()
@@ -124,5 +124,5 @@ jobs:
             --header 'Content-Type: application/json' \
             --data '{
                 "chat_id": 360370142,
-                "text": "Tests failed. Report: https://zhikhareval.github.io/db_web_test_automation/"
+                "text": "😞 Tests failed. Report: https://zhikhareval.github.io/db_web_test_automation"
             }'
