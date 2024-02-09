@@ -97,6 +97,8 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/fd486f61-f
 
 ## Оповещение в Telegram
 Для оповещения в Telegram вы можете использовать [телеграм бота](https://t.me/information_message_bot).
+![photo_2024-02-03_20-03-04](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/f9c81f88-df69-4824-b9f6-9ff7e5c63b66)
+
 
 ## Лицензия
 
