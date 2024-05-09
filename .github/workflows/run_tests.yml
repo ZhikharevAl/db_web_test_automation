@@ -67,11 +67,13 @@ jobs:
             pytest --cov=. --base-url https://demoblaze.com/ --alluredir=allure-results
           fi
 
-      - name: Upload test results
-        uses: actions/upload-artifact@v2
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
         with:
-          name: allure-results
-          path: allure-results
+          ref: gh-pages
+          path: gh-pages
       
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4.0.1
@@ -86,13 +88,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Get Allure history
-        uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
 
       - name: Allure Report action from marketplace
         uses: simple-elf/allure-report-action@v1.9
