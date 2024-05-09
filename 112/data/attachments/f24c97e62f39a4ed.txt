@@ -1,0 +1,3 @@
+2024-05-09 17:52:12,881 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-05-09 17:52:13,509 - tests.test_signup - INFO - Введены данные для регистрации: Kelly Thornton, 1*9SglHWP^
+2024-05-09 17:52:13,509 - tests.test_signup - INFO - Пользователь Kelly Thornton успешно зарегистрирован и вошел в систему.

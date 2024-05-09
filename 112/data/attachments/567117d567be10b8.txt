@@ -1,0 +1,10 @@
+2024-05-09 17:53:03,589 - tests.test_pairwise - INFO - Кнопка 'Monitor' нажата.
+2024-05-09 17:53:03,925 - tests.test_pairwise - INFO - Карточка монитора нажата.
+2024-05-09 17:53:04,190 - tests.test_pairwise - INFO - Кнопка 'Add to Cart' нажата.
+2024-05-09 17:53:04,274 - tests.test_pairwise - INFO - Кнопка 'Cart' нажата.
+2024-05-09 17:53:34,286 - tests.test_pairwise - ERROR - Ошибка во время выполнения теста: Timeout 30000ms exceeded.
+2024-05-09 17:53:37,696 - tests.test_pairwise - INFO - Кнопка 'Monitor' нажата.
+2024-05-09 17:53:38,023 - tests.test_pairwise - INFO - Карточка монитора нажата.
+2024-05-09 17:53:38,410 - tests.test_pairwise - INFO - Кнопка 'Add to Cart' нажата.
+2024-05-09 17:53:38,564 - tests.test_pairwise - INFO - Кнопка 'Cart' нажата.
+2024-05-09 17:53:39,377 - tests.test_pairwise - INFO - Текст названия монитора верен.

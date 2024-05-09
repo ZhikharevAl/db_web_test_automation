@@ -1,0 +1,1 @@
+2024-05-09 17:52:58,990 - tests.test_pairwise - INFO - Кнопка 'Monitor' нажата.
