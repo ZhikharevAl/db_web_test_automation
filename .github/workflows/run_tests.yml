@@ -103,4 +103,22 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.ACTIONS }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
-          
+
+      - name: Send success message to Telegram
+        if: success()
+        run: |
+          curl --location 'https://api.telegram.org/bot${{ secrets.TG }}/sendMessage' \
+          --header 'Content-Type: application/json' \
+          --data '{
+              "chat_id": 360370142,
+              "text": "🎉 Tests passed successfully. Report: https://zhikhareval.github.io/db_web_test_automation"
+          }'
+      - name: Send failure message to Telegram
+        if: failure()
+        run: |
+          curl --location 'https://api.telegram.org/bot${{ secrets.TG }}/sendMessage' \
+          --header 'Content-Type: application/json' \
+          --data '{
+              "chat_id": 360370142,
+              "text": "😞 Tests failed. Report: https://zhikhareval.github.io/db_web_test_automation"
+          }'
