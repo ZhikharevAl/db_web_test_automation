@@ -104,6 +104,11 @@ jobs:
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
 
+  telegram:
+    name: Send message to Telegram
+    runs-on: ubuntu-latest
+    needs: [Test, allure-report]
+    steps:
       - name: Send success message to Telegram
         if: success()
         run: |
