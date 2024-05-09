@@ -67,6 +67,12 @@ jobs:
             pytest --cov=. --base-url https://demoblaze.com/ --alluredir=allure-results
           fi
 
+      - uses: actions/upload-artifact@master
+        with:
+          name: allure-results
+          path: allure-results
+          retention-days: 20  
+
       - name: Get Allure history
         uses: actions/checkout@v2
         if: always()
