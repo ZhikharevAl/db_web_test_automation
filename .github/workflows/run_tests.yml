@@ -57,7 +57,7 @@ jobs:
         run: |
           pip install playwright
           playwright install
-
+      
       - name: Run tests with coverage
         run: |
           if [ "${{ github.event.inputs.parallel }}" = "true" ]
@@ -66,6 +66,12 @@ jobs:
           else
             pytest --cov=. --base-url https://demoblaze.com/ --alluredir=allure-results
           fi
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: allure-results
+          path: allure-results
       
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4.0.1
