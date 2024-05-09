@@ -1,0 +1,3 @@
+2024-05-09 17:10:46,215 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-05-09 17:10:46,847 - tests.test_signup - INFO - Введены данные для регистрации: Bernard Robinson, _%y1LZbJtJ
+2024-05-09 17:10:46,847 - tests.test_signup - INFO - Пользователь Bernard Robinson успешно зарегистрирован и вошел в систему.

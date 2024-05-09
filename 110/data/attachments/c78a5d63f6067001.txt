@@ -1,0 +1,3 @@
+2024-05-09 17:11:06,637 - tests.test_register_and_login - INFO - Страница регистрации открыта.
+2024-05-09 17:11:09,048 - tests.test_register_and_login - INFO - Зарегистрирован новый пользователь: Amy Holmes
+2024-05-09 17:11:09,067 - tests.test_register_and_login - INFO - Пользователь Amy Holmes успешно зарегистрирован и вошел в систему.
