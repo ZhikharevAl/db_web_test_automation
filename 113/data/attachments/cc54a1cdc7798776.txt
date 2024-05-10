@@ -1,0 +1,6 @@
+INFO     tests.test_pairwise:test_pairwise.py:92 Страница магазина открыта.
+INFO     tests.test_pairwise:test_pairwise.py:96 Кнопка ноутбука нажата.
+INFO     tests.test_pairwise:test_pairwise.py:100 Страница ноутбука открыта.
+INFO     tests.test_pairwise:test_pairwise.py:104 Кнопка 'Добавить в корзину' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:108 Кнопка корзины нажата.
+ERROR    tests.test_pairwise:test_pairwise.py:117 Ошибка при выполнении теста: Timeout 30000ms exceeded.
