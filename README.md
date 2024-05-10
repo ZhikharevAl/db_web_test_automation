@@ -95,7 +95,7 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/fd486f61-f
 ![Screenshot 2023-12-27 185502](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/015b7990-d614-4986-8e5c-062fc6b6c47d)
 
 ## Coverage
-
+![Screenshot 2024-05-09 193751](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/3998581c-d94a-4248-a1ef-ef2c7cbc739d)
 
 ## Оповещение в Telegram
 Для оповещения в Telegram вы можете использовать [телеграм бота](https://t.me/information_message_bot).
