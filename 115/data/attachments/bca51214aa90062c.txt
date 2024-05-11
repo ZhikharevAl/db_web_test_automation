@@ -1,0 +1,3 @@
+INFO     tests.test_signup:test_signup.py:36 Страница регистрации открыта.
+INFO     tests.test_signup:test_signup.py:40 Введены данные для регистрации: Erin Carey MD, &7w+ZqY8eC
+INFO     tests.test_signup:test_signup.py:49 Пользователь Erin Carey MD успешно зарегистрирован и вошел в систему.
