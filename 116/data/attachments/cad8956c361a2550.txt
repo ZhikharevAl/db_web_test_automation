@@ -1,0 +1,3 @@
+INFO     tests.test_signup:test_signup.py:36 Страница регистрации открыта.
+INFO     tests.test_signup:test_signup.py:40 Введены данные для регистрации: Carol Allen, #mM1*qMK94
+INFO     tests.test_signup:test_signup.py:49 Пользователь Carol Allen успешно зарегистрирован и вошел в систему.
