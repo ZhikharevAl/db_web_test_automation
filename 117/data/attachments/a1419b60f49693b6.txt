@@ -1,0 +1,6 @@
+INFO     tests.test_pairwise:test_pairwise.py:325 Страница магазина открыта.
+INFO     tests.test_pairwise:test_pairwise.py:329 Кнопка 'Monitor' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:333 Карточка монитора нажата.
+INFO     tests.test_pairwise:test_pairwise.py:337 Кнопка 'Add to Cart' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:341 Кнопка 'Cart' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:355 Заказ подтвержден.
