@@ -1,0 +1,3 @@
+INFO     tests.test_signup:test_signup.py:36 Страница регистрации открыта.
+INFO     tests.test_signup:test_signup.py:40 Введены данные для регистрации: Alexis Lee, N@2K69elIl
+INFO     tests.test_signup:test_signup.py:49 Пользователь Alexis Lee успешно зарегистрирован и вошел в систему.
