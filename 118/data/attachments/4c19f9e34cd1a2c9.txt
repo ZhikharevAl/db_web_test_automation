@@ -1,0 +1,3 @@
+INFO     tests.test_register_and_login:test_register_and_login.py:29 Страница регистрации открыта.
+INFO     tests.test_register_and_login:test_register_and_login.py:35 Зарегистрирован новый пользователь: Eric Perez
+INFO     tests.test_register_and_login:test_register_and_login.py:43 Пользователь Eric Perez успешно зарегистрирован и вошел в систему.

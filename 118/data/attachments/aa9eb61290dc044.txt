@@ -1,0 +1,3 @@
+2024-05-12 17:02:57,153 - tests.test_register_and_login - INFO - Страница регистрации открыта.
+2024-05-12 17:02:59,615 - tests.test_register_and_login - INFO - Зарегистрирован новый пользователь: Eric Perez
+2024-05-12 17:02:59,646 - tests.test_register_and_login - INFO - Пользователь Eric Perez успешно зарегистрирован и вошел в систему.
