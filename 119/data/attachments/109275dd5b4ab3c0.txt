@@ -1,0 +1,3 @@
+2024-05-12 17:06:53,722 - tests.test_register_and_login - INFO - Страница регистрации открыта.
+2024-05-12 17:06:56,393 - tests.test_register_and_login - INFO - Зарегистрирован новый пользователь: Ronald Christensen
+2024-05-12 17:06:56,409 - tests.test_register_and_login - INFO - Пользователь Ronald Christensen успешно зарегистрирован и вошел в систему.
