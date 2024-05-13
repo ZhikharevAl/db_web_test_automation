@@ -18,7 +18,7 @@ permissions:
 
 jobs:
 
-  Flake8:
+  Black-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -36,12 +36,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8
-      - name: Run Flake8
-        run: flake8 .
+          pip install black
+      - name: Check code formatting with Black
+        run: black --check .
 
   Test:
-    needs: Flake8
+    needs: [ Black-check ]
     runs-on: ubuntu-latest
     continue-on-error: true
 
@@ -114,7 +114,7 @@ jobs:
   telegram:
     name: Send message to Telegram
     runs-on: ubuntu-latest
-    needs: [ Flake8, Test ]
+    needs: [ Black-check, Test ]
     steps:
       - name: Send success message to Telegram
         if: success()
