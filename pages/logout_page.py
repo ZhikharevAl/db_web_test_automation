@@ -1,4 +1,4 @@
-from pages.base_page import BasePage
+from pages.base_pages.base_page import BasePage
 from pages.locators import LogOutPageLocators
 
 

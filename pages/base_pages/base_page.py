@@ -89,7 +89,7 @@ class BasePage:
         """
         Прокручивает страницу вниз.
         """
-        self.page.keyboard.press('End')
+        self.page.keyboard.press("End")
 
     def click_button_by_role(self, name: str) -> None:
         """

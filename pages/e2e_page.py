@@ -1,7 +1,11 @@
-from pages.base_page import BasePage
-from pages.locators import (SignUpPageLocators, LoginPageLocators,
-                            ProductPageLocators, CartPageLocators,
-                            PlaceOrderPageLocators)
+from pages.base_pages.base_page import BasePage
+from pages.locators import (
+    SignUpPageLocators,
+    LoginPageLocators,
+    ProductPageLocators,
+    CartPageLocators,
+    PlaceOrderPageLocators,
+)
 from pages.place_order_page import PlaceOrderPage
 
 
