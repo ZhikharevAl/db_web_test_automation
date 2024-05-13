@@ -1,0 +1,3 @@
+2024-05-13 16:52:48,853 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-05-13 16:52:49,756 - tests.test_signup - INFO - Введены данные для регистрации: Marissa Terrell, C62IKpPy@v
+2024-05-13 16:52:49,757 - tests.test_signup - INFO - Пользователь Marissa Terrell успешно зарегистрирован и вошел в систему.

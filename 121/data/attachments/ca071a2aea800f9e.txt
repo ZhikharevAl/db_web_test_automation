@@ -1,0 +1,3 @@
+2024-05-13 16:52:50,336 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-05-13 16:52:51,058 - tests.test_signup - INFO - Введены данные для регистрации: Chad Schneider, 1hVPMeEs+Q
+2024-05-13 16:52:51,072 - tests.test_signup - INFO - Пользователь Chad Schneider успешно зарегистрирован и вошел в систему.

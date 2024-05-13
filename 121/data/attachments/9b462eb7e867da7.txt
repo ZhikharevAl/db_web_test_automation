@@ -1,0 +1,3 @@
+INFO     tests.test_signup:test_signup.py:39 Страница регистрации открыта.
+INFO     tests.test_signup:test_signup.py:43 Введены данные для регистрации: Ryan Myers, E^b4MNtB5$
+INFO     tests.test_signup:test_signup.py:52 Пользователь Ryan Myers успешно зарегистрирован и вошел в систему.
