@@ -1,4 +1,4 @@
-from pages.base_page import BasePage
+from pages.base_pages.base_page import BasePage
 from pages.locators import SliderLocators
 
 
@@ -35,5 +35,5 @@ class SliderPage(BasePage):
         """
         slides = self.get_slides()
         if slide_index < len(slides):
-            return 'active' in slides[slide_index].get_attribute('class')
+            return "active" in slides[slide_index].get_attribute("class")
         return False

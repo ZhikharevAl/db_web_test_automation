@@ -1,4 +1,4 @@
-from pages.base_page import BasePage
+from pages.base_pages.base_page import BasePage
 from pages.locators import SignUpPageLocators
 
 
@@ -32,7 +32,7 @@ class SignUpPage(BasePage):
         :return: True, если пользователь вошел в систему (для 'positive'),
                  False - в противном случае (для 'negative').
         """
-        if test_type == 'positive':
+        if test_type == "positive":
             return True
-        elif test_type == 'negative':
+        elif test_type == "negative":
             return False

@@ -1,132 +1,132 @@
 from data.data import PersonData
-from pages.base_page import BasePage
+from pages.base_pages.base_page import BasePage
 from pages.locators import PairwisePageLocators
 
 
 class PairwisePage(BasePage):
     def click_button_smartphone(self):
         """
-           Clicks the smartphone button on the webpage.
-           This function uses the `click_get_by_role`
-           method to click the smartphone button.
-           """
+        Clicks the smartphone button on the webpage.
+        This function uses the `click_get_by_role`
+        method to click the smartphone button.
+        """
         self.click_get_by_role(*PairwisePageLocators.PHONES)
 
     def click_button_phone(self):
         """
-            Clicks the phone button on the webpage.
-            This function uses the `click_get_by_role`
-            method to click the phone button.
-            """
+        Clicks the phone button on the webpage.
+        This function uses the `click_get_by_role`
+        method to click the phone button.
+        """
         self.click_get_by_role(*PairwisePageLocators.SONYXPERIAZ5)
 
     def name_text_phone(self):
         """
-            Returns the text of the phone's name on the webpage.
-            Returns:
-                str: The text of the phone's name.
-            """
+        Returns the text of the phone's name on the webpage.
+        Returns:
+            str: The text of the phone's name.
+        """
         return self.text_by_role(*PairwisePageLocators.SONYXPERIAZ5_TEXT)
 
     def name_text_phone_cart(self):
         """
-            Returns the text of the phone's name in the cart on the webpage.
-            Returns:
-                str: The text of the phone's name in the cart.
-            """
+        Returns the text of the phone's name in the cart on the webpage.
+        Returns:
+            str: The text of the phone's name in the cart.
+        """
         return self.text_by_role(*PairwisePageLocators.SONYXPERIAZ5_TEXT_CART)
 
     def click_button_laptop(self):
         """
-            Clicks the laptop button on the webpage.
+        Clicks the laptop button on the webpage.
 
-            This function uses the `click_get_by_role`
-            method to click the laptop button.
-            """
+        This function uses the `click_get_by_role`
+        method to click the laptop button.
+        """
         self.click_get_by_role(*PairwisePageLocators.LAPTOPS)
 
     def click_button_monitor(self):
         """
-            Clicks the monitor button on the webpage.
-            This function uses the `click_get_by_role`
-            method to click the monitor button.
-            """
+        Clicks the monitor button on the webpage.
+        This function uses the `click_get_by_role`
+        method to click the monitor button.
+        """
         self.click_get_by_role(*PairwisePageLocators.MONITORS)
 
     def click_button_notebook(self):
         """
-           Clicks the notebook button on the webpage.
-           This function uses the `click_get_by_role`
-           method to click the notebook button.
-           """
+        Clicks the notebook button on the webpage.
+        This function uses the `click_get_by_role`
+        method to click the notebook button.
+        """
         self.click_get_by_role(*PairwisePageLocators.DELL)
 
     def click_add_to_cart(self):
         """
-            Clicks the 'Add to Cart' button on the webpage.
-            This function uses the `click_get_by_role`
-            method to click the 'Add to Cart' button.
-            """
+        Clicks the 'Add to Cart' button on the webpage.
+        This function uses the `click_get_by_role`
+        method to click the 'Add to Cart' button.
+        """
         self.click_get_by_role(*PairwisePageLocators.ADD_TO_CART)
 
     def click_button_cart(self):
         """
-            Clicks the 'Cart' button on the webpage.
-            This function uses the `click_button`
-            method to click the 'Cart' button.
-            """
+        Clicks the 'Cart' button on the webpage.
+        This function uses the `click_button`
+        method to click the 'Cart' button.
+        """
         self.click_button(PairwisePageLocators.CART)
 
     def name_text_laptop(self):
         """
-            Retrieve the name text of the laptop from the page.
-            Returns:
-                str: The name text of the laptop.
-            """
+        Retrieve the name text of the laptop from the page.
+        Returns:
+            str: The name text of the laptop.
+        """
         return self.inner_text(PairwisePageLocators.DELL_NAME)
 
     def name_text_notebook(self):
         """
-            Retrieve the name text from the notebook.
+        Retrieve the name text from the notebook.
 
-            Returns:
-                str: The name text from the notebook.
-            """
+        Returns:
+            str: The name text from the notebook.
+        """
         return self.text_by_role(*PairwisePageLocators.DELL_NAME_TEXT)
 
     def click_button_place_order(self):
         """
-            Clicks the 'Place Order' button on the webpage.
+        Clicks the 'Place Order' button on the webpage.
 
-            This function uses the `click_get_by_role`
-            method to click the 'Place Order' button.
-            """
+        This function uses the `click_get_by_role`
+        method to click the 'Place Order' button.
+        """
         self.click_get_by_role(*PairwisePageLocators.PLACE_ORDER)
 
     def fill_name(self, name):
         """
-            Fills the name field on the webpage with the specified name.
-            Args:
-                name (str): The name to be filled in the name field.
-            """
+        Fills the name field on the webpage with the specified name.
+        Args:
+            name (str): The name to be filled in the name field.
+        """
         self.get_by_label(PairwisePageLocators.NAME).fill(name)
 
     def fill_country(self, country):
         """
-            Fills the country field on the webpage with the specified country.
-            Args:
-                country (str): The country to be filled in the country field.
-            """
+        Fills the country field on the webpage with the specified country.
+        Args:
+            country (str): The country to be filled in the country field.
+        """
         self.get_by_label(PairwisePageLocators.COUNTRY).fill(country)
 
     def fill_city(self, city):
         """
-            Fills the city input field with the given city name.
-            Args:
-                city (str): The name of the city to fill.
-            Returns:
-                None
-            """
+        Fills the city input field with the given city name.
+        Args:
+            city (str): The name of the city to fill.
+        Returns:
+            None
+        """
         self.get_by_label(PairwisePageLocators.CITY).fill(city)
 
     def fill_credit_card(self, credit_card):

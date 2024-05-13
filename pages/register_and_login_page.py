@@ -1,5 +1,4 @@
-
-from pages.base_page import BasePage
+from pages.base_pages.base_page import BasePage
 from pages.locators import SignUpPageLocators, LoginPageLocators
 
 
@@ -41,6 +40,7 @@ class RegisterAndLoginPage(BasePage):
                          проверяется вход в систему.
         :return: True, если пользователь вошел в систему, иначе False.
         """
-        return (self.inner_text
-                (LoginPageLocators.USERNAME_DISPLAY_SELECTOR)
-                == f'Welcome {username}')
+        return (
+            self.inner_text(LoginPageLocators.USERNAME_DISPLAY_SELECTOR)
+            == f"Welcome {username}"
+        )

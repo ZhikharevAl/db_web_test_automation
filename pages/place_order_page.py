@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from data.data import PersonData
-from pages.base_page import BasePage
+from pages.base_pages.base_page import BasePage
 from pages.locators import PlaceOrderPageLocators
 
 
@@ -90,8 +90,10 @@ class PlaceOrderPage(BasePage):
         Метод для снимка экрана.
         """
         current_datetime = datetime.now().strftime("%Y%m%d-%H%M%S")
-        self.screenshot(f'docs/artifacts/screenshots/'
-                        f'place_order_screenshot_{current_datetime}.png')
+        self.screenshot(
+            f"docs/artifacts/screenshots/"
+            f"place_order_screenshot_{current_datetime}.png"
+        )
 
     def message_thank_you(self):
         """
