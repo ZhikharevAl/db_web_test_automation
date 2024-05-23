@@ -6,4 +6,3 @@ services:
       dockerfile: Dockerfile
     environment:
       - BASE_URL=https://www.demoblaze.com/
-
