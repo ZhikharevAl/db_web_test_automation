@@ -1,10 +1,20 @@
+# Игнорировать временные файлы Python
 __pycache__
 *.pyc
 *.pyo
 *.pyd
+
+# Игнорировать файлы результатов тестирования и покрытия кода
 .pytest_cache
 .coverage
 htmlcov
+
+# Игнорировать файлы и каталоги для IDE и виртуальной среды
 .idea
-node_modules
-playwright
+.venv
+
+# Игнорировать результаты Allure
+allure-results
+
+# Игнорировать файлы логов
+test.log

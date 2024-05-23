@@ -9,7 +9,7 @@ class LoginPageLocators:
     # Селектор поля ввода пароля
     PASSWORD_FIELD_SELECTOR = "#loginpassword"
     # Селектор кнопки отправки формы входа
-    SUBMIT_BUTTON_SELECTOR = "#logInModal >> button.btn-primary"
+    SUBMIT_BUTTON_SELECTOR = "//button[@onclick='logIn()']"
     # Селектор для отображения имени пользователя после входа
     USERNAME_DISPLAY_SELECTOR = "#nameofuser"
 
@@ -27,10 +27,7 @@ class SignUpPageLocators:
     # Селектор кнопки отправки формы регистрации
     SIGNUP_SUBMIT_BUTTON = "button[onclick='register()']"
     # Селектор кнопки закрытия модального окна регистрации
-    CLOSE_BUTTON = (
-        "#signInModal > div > div > div.modal-footer > " "button.btn.btn-secondary"
-    )
-
+    CLOSE_BUTTON = "(//button[@class='btn btn-secondary'])[2]"
 
 class LogOutPageLocators:
     """
@@ -68,8 +65,8 @@ class CartPageLocators:
     """
 
     # Локатор для кнопки "Корзина"
-    CART = "#navbarExample > ul > li:nth-child(4) > a"
-    CART_BUTTON = "#tbodyid > div.row > div > a"
+    CART = "//a[@id='cartur']"
+    CART_BUTTON = "//a[contains(@onclick, 'add')]"
     PRICE = "#tbodyid > tr > td:nth-child(3)"
 
 
@@ -79,7 +76,7 @@ class PlaceOrderPageLocators:
     """
 
     # Кнопка "Оформить заказ"
-    PLACE_ORDER_BUTTON = "#page-wrapper > div > div.col-lg-1 > button"
+    PLACE_ORDER_BUTTON = "//button[@data-toggle='modal']"
     NAME = "#name"  # Поле ввода имени
     COUNTRY = "#country"  # Поле ввода страны
     CITY = "#city"  # Поле ввода города
