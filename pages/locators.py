@@ -29,7 +29,6 @@ class SignUpPageLocators:
     # Селектор кнопки закрытия модального окна регистрации
     CLOSE_BUTTON = "(//button[@class='btn btn-secondary'])[2]"
 
-
 class LogOutPageLocators:
     """
     Этот класс содержит локаторы для страницы выхода из системы.
