@@ -1,0 +1,3 @@
+INFO     tests.test_signup:test_signup.py:39 Страница регистрации открыта.
+INFO     tests.test_signup:test_signup.py:43 Введены данные для регистрации: Christian Taylor, 7789(2Yq^D
+INFO     tests.test_signup:test_signup.py:52 Пользователь Christian Taylor успешно зарегистрирован и вошел в систему.

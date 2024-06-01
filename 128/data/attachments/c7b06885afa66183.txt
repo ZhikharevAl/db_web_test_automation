@@ -1,0 +1,3 @@
+INFO     tests.test_signup:test_signup.py:39 Страница регистрации открыта.
+INFO     tests.test_signup:test_signup.py:43 Введены данные для регистрации: William Alvarez, @lR7QAvmp!
+INFO     tests.test_signup:test_signup.py:52 Пользователь William Alvarez успешно зарегистрирован и вошел в систему.
