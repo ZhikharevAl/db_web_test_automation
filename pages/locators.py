@@ -59,6 +59,8 @@ class ProductPageLocators:
     # Локатор для имени продукта на странице продукта
     NAMEPRODUCT = "#tbodyid > h2"
 
+    PRODUCTNAMESAMSUNG = "text=Samsung galaxy s6"
+
 
 class CartPageLocators:
     """
@@ -77,16 +79,16 @@ class PlaceOrderPageLocators:
     """
 
     # Кнопка "Оформить заказ"
-    PLACE_ORDER_BUTTON = "//button[@data-toggle='modal']"
+    PLACE_ORDER_BUTTON = "button.btn-success:has-text('Place Order')"
     NAME = "#name"  # Поле ввода имени
     COUNTRY = "#country"  # Поле ввода страны
     CITY = "#city"  # Поле ввода города
     CREDIT_CARD = "#card"  # Поле ввода номера кредитной карты
     MONTH = "#month"  # Поле ввода месяца
     YEAR = "#year"  # Поле ввода года
-    PURCHASE = "//*[text() = 'Purchase"  # Кнопка "Покупка"
+    PURCHASE = "button:has-text('Purchase')"  # Кнопка "Покупка"
     # Сообщение "Thank you for your purchase!"
-    THANK_YOU = "div[data-timer='null'] h2"
+    THANK_YOU = ".sweet-alert h2"
 
 
 class PairwisePageLocators:
