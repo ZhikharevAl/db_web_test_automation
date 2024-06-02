@@ -1,5 +1,0 @@
-INFO     tests.test_pairwise:test_pairwise.py:389 Кнопка 'Monitor' нажата.
-INFO     tests.test_pairwise:test_pairwise.py:393 Карточка монитора нажата.
-INFO     tests.test_pairwise:test_pairwise.py:397 Кнопка 'Add to Cart' нажата.
-INFO     tests.test_pairwise:test_pairwise.py:401 Кнопка 'Cart' нажата.
-INFO     tests.test_pairwise:test_pairwise.py:405 Текст названия монитора верен.

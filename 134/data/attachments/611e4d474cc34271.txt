@@ -1,0 +1,3 @@
+2024-06-02 02:45:03,374 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-02 02:45:04,049 - tests.test_signup - INFO - Введены данные для регистрации: Kimberly Hubbard, $y4tOmR^$C
+2024-06-02 02:45:04,050 - tests.test_signup - INFO - Пользователь Kimberly Hubbard успешно зарегистрирован и вошел в систему.

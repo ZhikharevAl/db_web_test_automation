@@ -1,0 +1,2 @@
+2024-06-02 02:44:59,800 - tests.test_home_page - INFO - Страница входа открыта
+2024-06-02 02:44:59,838 - tests.test_home_page - INFO - Заголовок не Wrong Title, как и ожидалось для https://demoblaze.com/

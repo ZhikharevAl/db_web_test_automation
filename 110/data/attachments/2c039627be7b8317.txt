@@ -1,6 +1,0 @@
-INFO     tests.test_pairwise:test_pairwise.py:92 Страница магазина открыта.
-INFO     tests.test_pairwise:test_pairwise.py:96 Кнопка ноутбука нажата.
-INFO     tests.test_pairwise:test_pairwise.py:100 Страница ноутбука открыта.
-INFO     tests.test_pairwise:test_pairwise.py:104 Кнопка 'Добавить в корзину' нажата.
-INFO     tests.test_pairwise:test_pairwise.py:108 Кнопка корзины нажата.
-INFO     tests.test_pairwise:test_pairwise.py:113 Текст названия ноутбука проверен и соответствует ожидаемому.
