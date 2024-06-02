@@ -1,0 +1,7 @@
+2024-06-02 02:09:31,753 - tests.test_broken - INFO - Страница входа открыта.
+2024-06-02 02:09:31,771 - tests.test_broken - ERROR - assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+2024-06-02 02:09:31,981 - tests.test_broken - INFO - Тест завершен.

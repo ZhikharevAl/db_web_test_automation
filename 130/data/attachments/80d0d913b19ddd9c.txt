@@ -1,0 +1,3 @@
+2024-06-02 02:09:00,969 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-02 02:09:01,810 - tests.test_signup - INFO - Введены данные для регистрации: Dr. Susan Hernandez, 32fPQ!le^O
+2024-06-02 02:09:01,811 - tests.test_signup - INFO - Пользователь Dr. Susan Hernandez успешно зарегистрирован и вошел в систему.

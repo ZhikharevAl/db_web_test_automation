@@ -1,0 +1,6 @@
+2024-06-02 02:09:12,260 - tests.test_pairwise - INFO - Кнопка 'Smartphone' нажата.
+2024-06-02 02:09:12,361 - tests.test_pairwise - INFO - Карточка смартфона нажата.
+2024-06-02 02:09:12,511 - tests.test_pairwise - INFO - Кнопка 'Add to Cart' нажата.
+2024-06-02 02:09:12,598 - tests.test_pairwise - INFO - Кнопка 'Cart' нажата.
+2024-06-02 02:09:13,302 - tests.test_pairwise - INFO - Кнопка 'Submit' нажата.
+2024-06-02 02:09:13,327 - tests.test_pairwise - INFO - Заказ подтвержден.
