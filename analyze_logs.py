@@ -11,11 +11,14 @@ def get_chatgpt_analysis(test_logs):
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user",
-             "content": f"Тесты упали. Вот логи:\n{test_logs}\nЧто могло пойти не так и какие шаги для устранения проблемы?"}
-        ]
+            {
+                "role": "user",
+                "content": f"Тесты упали. Вот логи:\n{test_logs}\n"
+                f"Что могло пойти не так и какие шаги для устранения проблемы?",
+            },
+        ],
     )
-    return response.choices[0].message['content'].strip()
+    return response.choices[0].message["content"].strip()
 
 
 if __name__ == "__main__":
@@ -23,4 +26,3 @@ if __name__ == "__main__":
     analysis = get_chatgpt_analysis(test_logs)
     print("ChatGPT Analysis:")
     print(analysis)
-
