@@ -1,0 +1,3 @@
+2024-06-02 02:30:07,657 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-02 02:30:08,513 - tests.test_signup - INFO - Введены данные для регистрации: Phyllis Sanchez, ^Z8XQzoG@+
+2024-06-02 02:30:08,514 - tests.test_signup - INFO - Пользователь Phyllis Sanchez успешно зарегистрирован и вошел в систему.

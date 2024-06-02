@@ -1,0 +1,8 @@
+INFO     tests.test_pairwise:test_pairwise.py:40 Страница магазина открыта.
+INFO     tests.test_pairwise:test_pairwise.py:44 Кнопка смартфона нажата.
+ERROR    tests.test_pairwise:test_pairwise.py:60 Ошибка при выполнении теста: Locator.click: Error: strict mode violation: get_by_role("link", name="Sony xperia z5") resolved to 2 elements:
+    1) <a class="hrefch" href="prod.html?idp_=6">Sony xperia z5</a> aka get_by_role("link", name="Sony xperia z5").first
+    2) <a class="hrefch" href="prod.html?idp_=6">Sony xperia z5</a> aka get_by_role("link", name="Sony xperia z5").nth(1)
+
+Call log:
+waiting for get_by_role("link", name="Sony xperia z5")
