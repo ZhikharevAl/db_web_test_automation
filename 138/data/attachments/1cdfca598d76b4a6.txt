@@ -1,0 +1,3 @@
+2024-06-02 16:51:25,827 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-02 16:51:26,572 - tests.test_signup - INFO - Введены данные для регистрации: Thomas Wilson, 3rN!KWHw(q
+2024-06-02 16:51:26,572 - tests.test_signup - INFO - Пользователь Thomas Wilson успешно зарегистрирован и вошел в систему.

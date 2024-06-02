@@ -1,3 +1,0 @@
-2024-05-11 16:50:44,421 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-11 16:50:45,018 - tests.test_signup - INFO - Введены данные для регистрации: Scott Johnson, 55CmFgae@C
-2024-05-11 16:50:45,018 - tests.test_signup - INFO - Пользователь Scott Johnson успешно зарегистрирован и вошел в систему.

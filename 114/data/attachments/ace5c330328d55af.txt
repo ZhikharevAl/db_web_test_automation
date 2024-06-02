@@ -1,6 +1,0 @@
-INFO     tests.test_add_to_cart:test_add_to_cart.py:30 Продукт добавлен в корзину.
-INFO     tests.test_add_to_cart:test_add_to_cart.py:35 Корзина открыта.
-ERROR    tests.test_add_to_cart:test_add_to_cart.py:53 Ошибка при выполнении теста: Timeout 30000ms exceeded.
-INFO     tests.test_add_to_cart:test_add_to_cart.py:30 Продукт добавлен в корзину.
-INFO     tests.test_add_to_cart:test_add_to_cart.py:35 Корзина открыта.
-ERROR    tests.test_add_to_cart:test_add_to_cart.py:53 Ошибка при выполнении теста: Timeout 30000ms exceeded.

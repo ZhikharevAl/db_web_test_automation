@@ -1,9 +1,0 @@
-2024-05-11 16:50:44,972 - tests.test_add_to_cart - INFO - Продукт добавлен в корзину.
-2024-05-11 16:50:45,128 - tests.test_add_to_cart - INFO - Корзина открыта.
-2024-05-11 16:51:15,145 - tests.test_add_to_cart - ERROR - Ошибка при выполнении теста: Timeout 30000ms exceeded.
-2024-05-11 16:51:54,998 - tests.test_add_to_cart - INFO - Продукт добавлен в корзину.
-2024-05-11 16:51:55,122 - tests.test_add_to_cart - INFO - Корзина открыта.
-2024-05-11 16:52:25,134 - tests.test_add_to_cart - ERROR - Ошибка при выполнении теста: Timeout 30000ms exceeded.
-2024-05-11 16:53:05,996 - tests.test_add_to_cart - INFO - Продукт добавлен в корзину.
-2024-05-11 16:53:06,121 - tests.test_add_to_cart - INFO - Корзина открыта.
-2024-05-11 16:53:36,134 - tests.test_add_to_cart - ERROR - Ошибка при выполнении теста: Timeout 30000ms exceeded.

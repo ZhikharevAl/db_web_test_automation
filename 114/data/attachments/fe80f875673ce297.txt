@@ -1,3 +1,0 @@
-2024-05-11 16:53:55,679 - tests.test_register_and_login - INFO - Страница регистрации открыта.
-2024-05-11 16:53:58,054 - tests.test_register_and_login - INFO - Зарегистрирован новый пользователь: Mrs. Shirley Delgado DDS
-2024-05-11 16:53:58,073 - tests.test_register_and_login - INFO - Пользователь Mrs. Shirley Delgado DDS успешно зарегистрирован и вошел в систему.

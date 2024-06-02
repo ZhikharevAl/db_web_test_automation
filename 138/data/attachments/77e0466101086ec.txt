@@ -1,0 +1,21 @@
+INFO     tests.test_broken:test_broken.py:16 Страница входа открыта.
+ERROR    tests.test_broken:test_broken.py:23 assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+INFO     tests.test_broken:test_broken.py:32 Тест завершен.
+INFO     tests.test_broken:test_broken.py:16 Страница входа открыта.
+ERROR    tests.test_broken:test_broken.py:23 assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+INFO     tests.test_broken:test_broken.py:32 Тест завершен.
+INFO     tests.test_broken:test_broken.py:16 Страница входа открыта.
+ERROR    tests.test_broken:test_broken.py:23 assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+INFO     tests.test_broken:test_broken.py:32 Тест завершен.
