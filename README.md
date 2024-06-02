@@ -1,6 +1,6 @@
 # UI Automation with Python and Playwright
 
-[View Russian version of this file here](https://github.com/ZhikharevAl/db_web_test_automation/blob/main/README.ru.md)
+[View Russian version of this file here](README.ru.md)
 
 ## Contents
 
