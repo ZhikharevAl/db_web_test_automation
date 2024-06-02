@@ -1,137 +1,125 @@
-# 🎭UI Automation with [Python](https://www.python.org/) and [Playwright](https://playwright.dev/python/).
+# UI Automation with Python and Playwright
 
-## Содержание
+[View Russian version of this file here](https://github.com/ZhikharevAl/db_web_test_automation/blob/main/README.ru.md)
 
-1. [Описание](#описание)
+## Contents
 
-2. [Установка](#установка)
-
-3. [Запуск тестов](#запуск-тестов)
-
-4. [Структура проекта](#структура-проекта)
-
-5. [Документация](#документация)
-
-    - [Pairwise Тест](#pairwise-тест)
-   
-    - [Диаграмма переходов состояний](#диаграмма-переходов-состояний)
-   
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Running Tests](#running-tests)
+4. [Project Structure](#project-structure)
+5. [Documentation](#documentation)
+   - [Pairwise Testing](#pairwise-testing)
+   - [State Transition Diagram](#state-transition-diagram)
 6. [Coverage](#coverage)
+7. [Allure Report](#allure-report)
+8. [Telegram Notification](#telegram-notification)
+9. [License](#license)
 
-7. [Allure report](#allure-report)
+## Description
 
-8. [Оповещение в Telegram](#оповещение-в-telegram)
+This project is a set of automated UI tests written in Python using Playwright, Allure, and PyTest.
 
-9. [Лицензия](#лицензия)
+## Installation
 
-## Описание
+1. Install Python: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+2. Clone the repository: `git clone https://github.com/ZhikharevAl/db_web_test_automation.git`
+3. Activate the virtual environment: `/.venv/Scripts/activate`
+4. Install dependencies: `pip install -r requirements.txt`
 
-Этот проект представляет собой набор автоматических тестов пользовательского интерфейса, написанных на Python с использованием Playwright, Allure и Pytest.
+## Running Tests
 
-## Установка
-
-1. Установите Python: `https://www.python.org/downloads/`
-2. Клонируйте репозиторий: `git clone https://github.com/ZhikharevAl/db_web_test_automation.git`
-3. Активируйте виртуальную среду: `/.venv/Scripts/activate`
-4. Установите зависимости: `pip install -r requirements.txt`
-
-## Запуск тестов 
-
-1. **Запустите тесты:**
+1. Run tests:
    - `pytest`
    - `pytest --numprocesses auto`
 
-   > Команда `pytest --numprocesses auto` используется для запуска тестов в параллельном режиме с помощью плагина pytest-xdist. Для установки плагина pytest-xdist, выполните следующую команду в командной строке:
-   > ```
-   > pip install -U pytest-xdist
-   > ```
-   > Или
-   > ```
-   > pip install pytest-xdist
-   > ```
-   > Если вы хотите использовать psutil для определения количества доступных процессоров, установите дополнительный пакет psutil:
-   > ```
-   > pip install pytest-xdist[psutil]
-   > ```
-   > Например:
-   > ```
-   > pytest --numprocesses auto --count=100 .\tests\name_test.py
-   > ```
-   > Опция `--numprocesses auto` автоматически определяет количество процессов, равное количеству доступных процессоров, и распределяет тесты случайным образом между ними. Опция `--count=100` указывает, что каждый тест должен быть выполнен 100 раз. Путь `.\tests\name_test.py` указывает на файл с тестами, который нужно запустить.
+> The `pytest --numprocesses auto` command is used to run tests in parallel using the pytest-xdist plugin. To install the pytest-xdist plugin, execute the following command:
+> 
+> ```sh
+> pip install -U pytest-xdist
+> ```
+> Or:
+> ```sh
+> pip install pytest-xdist
+> ```
+> If you want to use psutil to determine the number of available processors, install the additional psutil package:
+> ```sh
+> pip install pytest-xdist[psutil]
+> ```
+> Example:
+> ```sh
+> pytest --numprocesses auto --count=100 .\tests\name_test.py
+> ```
+> The `--numprocesses auto` option automatically determines the number of processes equal to the number of available processors and randomly distributes tests among them. The `--count=100` option specifies that each test should be run 100 times. The path `.\tests\name_test.py` points to the test file to be run.
 
-
-https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/fd486f61-f36f-42f8-84e1-cd91a8e0cba5
-
-
-2. **Запуск с указанием базового URL:**
+2. Run with a specified base URL:
    - `pytest --base-url https://demoblaze.com/`
 
-   > Плагин [pytest-base-url](https://github.com/pytest-dev/pytest-base-url) - это простой плагин для pytest, который предоставляет опциональный базовый URL через командную строку или файл конфигурации. Вы можете установить pytest-base-url с помощью pip:
-   > ```
-   > pip install pytest-base-url
-   > ```
-   > После установки вы можете указать базовый URL в командной строке:
-   > ```
-   > pytest --base-url https://demoblaze.com/
-   > ```
-   > Или вы можете указать базовый URL в файле конфигурации:
-   > ```ini
-   > [pytest]
-   > base_url = https://demoblaze.com/
-   > ```
+> The `pytest-base-url` plugin is a simple plugin for pytest that provides an optional base URL via the command line or configuration file. You can install pytest-base-url with pip:
+> ```sh
+> pip install pytest-base-url
+> ```
+> After installation, you can specify the base URL on the command line:
+> ```sh
+> pytest --base-url https://demoblaze.com/
+> ```
+> Or you can specify the base URL in the configuration file:
+> ```ini
+> [pytest]
+> base_url = https://demoblaze.com/
+> ```
 
-3. **Автоматический перезапуск тестов при падении:**
-   > Если вы хотите, чтобы тест автоматически перезапускался при падении, вы можете использовать плагин [pytest-rerunfailures](https://github.com/pytest-dev/pytest-rerunfailures). Этот плагин позволяет автоматически перезапускать тесты, которые не прошли. Для установки плагина выполните следующую команду:
-   > ```
-   > pip install pytest-rerunfailures
-   > ```
-   > Затем в файле `pytest.ini` укажите следующее:
-   > ```ini
-   > [pytest]
-   > addopts = --reruns=5
-   > ```
-![Screenshot 2023-11-29 031825](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/049dfb7e-668a-4c6b-ba03-6794fddc7c82)
+3. Automatic test restart on failure:
 
-2. Сгенерируйте отчет Allure: `allure serve allure-results` 
+> If you want the test to automatically restart on failure, you can use the `pytest-rerunfailures` plugin. This plugin allows you to automatically rerun failed tests. To install the plugin, execute the following command:
+> ```sh
+> pip install pytest-rerunfailures
+> ```
+> Then, in the `pytest.ini` file, specify the following:
+> ```ini
+> [pytest]
+> addopts = --reruns=5
+> ```
 
-## Структура проекта
+4. Generate Allure report: `allure serve allure-results`
 
-- `.github/workflows/` - директория с workflow-файлами
-- `databases/` - директория с базами данных
-- `docs/` - директория с документацией
-- `tests/` - директория с тестами
-- `generator` - директория с генератором
-- `pages/` - директория с описанием страниц
-- `.gitignore` - файл с игнорируемыми файлами
-- `conftest.py` - файл с конфигурацией
-- `docker-compose.yml` - файл с конфигурацией docker-compose
-- `Dockerfile` - файл с Dockerfile
-- `pytest.ini` - файл с конфигурацией Pytest
-- `requirements.txt` - файл с зависимостями проекта
+## Project Structure
 
-## Документация
-Описание тестов и документация можно найти [здесь](https://github.com/ZhikharevAl/db_web_test_automation/blob/master/docs/TESTS.md).
+- `.github/workflows/` - directory with workflow files
+- `databases/` - directory with databases
+- `docs/` - directory with documentation
+- `tests/` - directory with tests
+- `generator` - directory with the generator
+- `pages/` - directory with page descriptions
+- `.gitignore` - file with ignored files
+- `conftest.py` - configuration file
+- `docker-compose.yml` - docker-compose configuration file
+- `Dockerfile` - Dockerfile
+- `pytest.ini` - Pytest configuration file
+- `requirements.txt` - project dependencies file
 
-### Pairwise Тест:
-![Screenshot 2023-12-27 185417](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/eef58ea5-62fb-47e5-8222-93c750683260)
+## Documentation
 
-### Диаграмма переходов состояний:
-![Screenshot 2023-12-27 185502](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/015b7990-d614-4986-8e5c-062fc6b6c47d)
+Descriptions of tests and documentation can be found [here](https://zhikhareval.github.io/db_web_test_automation/).
+
+### Pairwise Testing:
+![Pairwise Testing Screenshot](https://raw.githubusercontent.com/ZhikharevAl/db_web_test_automation/main/images/pairwise_testing.png)
+
+### State Transition Diagram:
+![State Transition Diagram Screenshot](https://raw.githubusercontent.com/ZhikharevAl/db_web_test_automation/main/images/state_transition_diagram.png)
 
 ## Coverage
-![Screenshot 2024-05-09 193751](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/3998581c-d94a-4248-a1ef-ef2c7cbc739d)
+![Coverage Screenshot](https://raw.githubusercontent.com/ZhikharevAl/db_web_test_automation/main/images/coverage.png)
 
-## Allure report
-![Screenshot 2024-05-15 204058](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/5802b2b9-0ca2-42fe-9585-18195eb9228b)
-![Screenshot 2024-05-15 203604](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/98c2252b-040a-497a-8717-70a040f1c5ee)
-![Screenshot 2024-05-15 203957](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/b49b3d20-67f2-4577-9d0c-72987920fe89)
+## Allure Report
+![Allure Report Screenshot 1](https://raw.githubusercontent.com/ZhikharevAl/db_web_test_automation/main/images/allure_report1.png)
+![Allure Report Screenshot 2](https://raw.githubusercontent.com/ZhikharevAl/db_web_test_automation/main/images/allure_report2.png)
 
+## Telegram Notification
 
-## Оповещение в Telegram
-Для оповещения в Telegram вы можете использовать [телеграм бота](https://t.me/information_message_bot).
-![photo_2024-02-03_20-03-04](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/f9c81f88-df69-4824-b9f6-9ff7e5c63b66)
+For Telegram notifications, you can use a [Telegram bot](https://t.me).
+![Telegram Notification Screenshot](https://raw.githubusercontent.com/ZhikharevAl/db_web_test_automation/main/images/telegram_notification.png)
 
+## License
 
-## Лицензия
-
-Этот проект лицензирован в соответствии с условиями лицензии MIT - см. Файл LICENSE.md для получения дополнительной информации.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
