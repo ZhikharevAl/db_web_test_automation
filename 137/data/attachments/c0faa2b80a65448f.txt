@@ -1,0 +1,3 @@
+2024-06-02 03:12:38,580 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-02 03:12:39,398 - tests.test_signup - INFO - Введены данные для регистрации: Monica Martinez, kB5JH5Fzb%
+2024-06-02 03:12:39,399 - tests.test_signup - INFO - Пользователь Monica Martinez успешно зарегистрирован и вошел в систему.

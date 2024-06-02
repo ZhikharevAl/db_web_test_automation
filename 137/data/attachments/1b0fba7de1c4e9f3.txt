@@ -1,0 +1,3 @@
+INFO     tests.test_signup:test_signup.py:39 Страница регистрации открыта.
+INFO     tests.test_signup:test_signup.py:43 Введены данные для регистрации: invalid_username, invalid_password
+ERROR    tests.test_signup:test_signup.py:57 Регистрация или вход в систему не удался для пользователя invalid_username.

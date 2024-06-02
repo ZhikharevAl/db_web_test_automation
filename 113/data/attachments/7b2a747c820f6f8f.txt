@@ -1,3 +1,0 @@
-2024-05-10 15:38:47,460 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-10 15:38:48,093 - tests.test_signup - INFO - Введены данные для регистрации: valid_username, valid_password
-2024-05-10 15:38:48,093 - tests.test_signup - INFO - Пользователь valid_username успешно зарегистрирован и вошел в систему.

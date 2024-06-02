@@ -1,3 +1,0 @@
-2024-05-10 15:37:53,199 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-10 15:37:53,831 - tests.test_signup - INFO - Введены данные для регистрации: Gregory Valentine, A0erv%Ha*b
-2024-05-10 15:37:53,832 - tests.test_signup - INFO - Пользователь Gregory Valentine успешно зарегистрирован и вошел в систему.
