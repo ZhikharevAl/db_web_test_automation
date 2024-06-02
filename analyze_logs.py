@@ -7,11 +7,11 @@ def get_chatgpt_analysis(test_logs):
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
     response = openai.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-3.5-turbo-0125",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {
-                "role": "user",
+                "role": "sdet",
                 "content": f"Тесты упали. Вот логи:\n{test_logs}\n"
                 f"Что могло пойти не так и какие шаги для устранения проблемы?",
             },
