@@ -6,7 +6,7 @@ import os
 def get_chatgpt_analysis(test_logs):
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
-    response = openai.ChatCompletion.create_model(
+    response = openai.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
