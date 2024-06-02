@@ -1,0 +1,42 @@
+2024-06-02 02:37:09,603 - tests.test_broken - INFO - Страница входа открыта.
+2024-06-02 02:37:09,713 - tests.test_broken - ERROR - assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+2024-06-02 02:37:10,063 - tests.test_broken - INFO - Тест завершен.
+2024-06-02 02:37:11,413 - tests.test_broken - INFO - Страница входа открыта.
+2024-06-02 02:37:11,585 - tests.test_broken - ERROR - assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+2024-06-02 02:37:11,909 - tests.test_broken - INFO - Тест завершен.
+2024-06-02 02:37:13,377 - tests.test_broken - INFO - Страница входа открыта.
+2024-06-02 02:37:13,493 - tests.test_broken - ERROR - assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+2024-06-02 02:37:13,910 - tests.test_broken - INFO - Тест завершен.
+2024-06-02 02:37:15,060 - tests.test_broken - INFO - Страница входа открыта.
+2024-06-02 02:37:15,082 - tests.test_broken - ERROR - assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+2024-06-02 02:37:15,388 - tests.test_broken - INFO - Тест завершен.
+2024-06-02 02:37:16,662 - tests.test_broken - INFO - Страница входа открыта.
+2024-06-02 02:37:16,729 - tests.test_broken - ERROR - assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+2024-06-02 02:37:17,036 - tests.test_broken - INFO - Тест завершен.
+2024-06-02 02:37:18,133 - tests.test_broken - INFO - Страница входа открыта.
+2024-06-02 02:37:18,192 - tests.test_broken - ERROR - assert 'STORE' == 'STOR'
+  
+  - STOR
+  + STORE
+  ?     +
+2024-06-02 02:37:18,479 - tests.test_broken - INFO - Тест завершен.
