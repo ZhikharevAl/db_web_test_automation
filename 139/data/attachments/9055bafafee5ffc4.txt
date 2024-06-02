@@ -1,0 +1,6 @@
+2024-06-02 17:05:38,626 - tests.test_pairwise - INFO - Страница магазина открыта.
+2024-06-02 17:05:38,730 - tests.test_pairwise - INFO - Кнопка 'Monitor' нажата.
+2024-06-02 17:05:39,069 - tests.test_pairwise - INFO - Карточка монитора нажата.
+2024-06-02 17:05:39,362 - tests.test_pairwise - INFO - Кнопка 'Add to Cart' нажата.
+2024-06-02 17:05:39,463 - tests.test_pairwise - INFO - Кнопка 'Cart' нажата.
+2024-06-02 17:05:40,145 - tests.test_pairwise - INFO - Заказ подтвержден.

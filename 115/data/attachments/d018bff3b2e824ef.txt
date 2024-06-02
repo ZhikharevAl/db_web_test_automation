@@ -1,1 +1,0 @@
-2024-05-11 17:36:43,809 - tests.test_logout_functionality - INFO - Выход из системы выполнен успешно.

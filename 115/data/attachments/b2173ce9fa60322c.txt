@@ -1,3 +1,0 @@
-2024-05-11 17:37:02,563 - tests.test_register_and_login - INFO - Страница регистрации открыта.
-2024-05-11 17:37:04,854 - tests.test_register_and_login - INFO - Зарегистрирован новый пользователь: Nicholas Miranda
-2024-05-11 17:37:04,869 - tests.test_register_and_login - INFO - Пользователь Nicholas Miranda успешно зарегистрирован и вошел в систему.

@@ -1,3 +1,0 @@
-INFO     tests.test_signup:test_signup.py:36 Страница регистрации открыта.
-INFO     tests.test_signup:test_signup.py:40 Введены данные для регистрации: Joe Brown, E@7JX0fO+Z
-INFO     tests.test_signup:test_signup.py:49 Пользователь Joe Brown успешно зарегистрирован и вошел в систему.
