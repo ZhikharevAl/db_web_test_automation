@@ -1,3 +1,0 @@
-2024-05-09 17:41:23,598 - tests.test_register_and_login - INFO - Страница регистрации открыта.
-2024-05-09 17:41:25,962 - tests.test_register_and_login - INFO - Зарегистрирован новый пользователь: Dustin Gonzalez
-2024-05-09 17:41:25,975 - tests.test_register_and_login - INFO - Пользователь Dustin Gonzalez успешно зарегистрирован и вошел в систему.

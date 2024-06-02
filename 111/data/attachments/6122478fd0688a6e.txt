@@ -1,3 +1,0 @@
-2024-05-09 17:40:05,601 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-09 17:40:06,263 - tests.test_signup - INFO - Введены данные для регистрации: James Gonzalez, NQNQ6S1pe&
-2024-05-09 17:40:06,264 - tests.test_signup - INFO - Пользователь James Gonzalez успешно зарегистрирован и вошел в систему.

@@ -1,5 +1,0 @@
-INFO     tests.test_place_order:test_place_order.py:33 Товар добавлен в корзину.
-INFO     tests.test_place_order:test_place_order.py:37 Страница оформления заказа открыта.
-INFO     tests.test_place_order:test_place_order.py:42 Форма оформления заказа заполнена.
-INFO     tests.test_place_order:test_place_order.py:46 Заказ оформлен.
-INFO     tests.test_place_order:test_place_order.py:51 Заказ успешно оформлен.

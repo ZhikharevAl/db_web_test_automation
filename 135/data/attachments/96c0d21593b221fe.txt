@@ -1,0 +1,3 @@
+2024-06-02 02:53:45,423 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-02 02:53:46,255 - tests.test_signup - INFO - Введены данные для регистрации: Christopher Williams, xm8NZaG%%D
+2024-06-02 02:53:46,255 - tests.test_signup - INFO - Пользователь Christopher Williams успешно зарегистрирован и вошел в систему.

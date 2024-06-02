@@ -1,6 +1,0 @@
-INFO     tests.test_pairwise:test_pairwise.py:249 Кнопка 'Smartphone' нажата.
-INFO     tests.test_pairwise:test_pairwise.py:254 Карточка смартфона нажата.
-INFO     tests.test_pairwise:test_pairwise.py:259 Кнопка 'Add to Cart' нажата.
-INFO     tests.test_pairwise:test_pairwise.py:264 Кнопка 'Cart' нажата.
-INFO     tests.test_pairwise:test_pairwise.py:277 Кнопка 'Submit' нажата.
-INFO     tests.test_pairwise:test_pairwise.py:283 Заказ подтвержден.
