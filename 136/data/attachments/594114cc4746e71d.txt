@@ -1,0 +1,3 @@
+2024-06-02 03:06:58,763 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-02 03:06:59,614 - tests.test_signup - INFO - Введены данные для регистрации: Peggy Marshall, !bc7Di3qa!
+2024-06-02 03:06:59,615 - tests.test_signup - INFO - Пользователь Peggy Marshall успешно зарегистрирован и вошел в систему.

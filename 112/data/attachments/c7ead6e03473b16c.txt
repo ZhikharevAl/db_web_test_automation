@@ -1,3 +1,0 @@
-2024-05-09 17:53:38,897 - tests.test_register_and_login - INFO - Страница регистрации открыта.
-2024-05-09 17:53:41,266 - tests.test_register_and_login - INFO - Зарегистрирован новый пользователь: Christian Lee
-2024-05-09 17:53:41,289 - tests.test_register_and_login - INFO - Пользователь Christian Lee успешно зарегистрирован и вошел в систему.

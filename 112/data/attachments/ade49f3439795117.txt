@@ -1,3 +1,0 @@
-2024-05-09 17:52:16,048 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-09 17:52:16,643 - tests.test_signup - INFO - Введены данные для регистрации: Robert Oliver, 6aHMfruA_1
-2024-05-09 17:52:16,643 - tests.test_signup - INFO - Пользователь Robert Oliver успешно зарегистрирован и вошел в систему.

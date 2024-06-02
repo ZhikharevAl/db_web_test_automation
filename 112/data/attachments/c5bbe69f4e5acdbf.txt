@@ -1,3 +1,0 @@
-INFO     tests.test_signup:test_signup.py:36 Страница регистрации открыта.
-INFO     tests.test_signup:test_signup.py:40 Введены данные для регистрации: Kelly Thornton, 1*9SglHWP^
-INFO     tests.test_signup:test_signup.py:49 Пользователь Kelly Thornton успешно зарегистрирован и вошел в систему.
