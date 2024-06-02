@@ -73,6 +73,7 @@ jobs:
             pytest --cov=. --base-url https://demoblaze.com/ --alluredir=allure-results 2>&1 | tee pytest.log
           fi
       - name: Analyze logs with ChatGPT
+        if: failure()
         run: |
           python analyze_logs.py "$(cat pytest.log)" > chatgpt_analysis.txt
           cat chatgpt_analysis.txt
