@@ -1,3 +1,0 @@
-INFO     tests.test_signup:test_signup.py:36 Страница регистрации открыта.
-INFO     tests.test_signup:test_signup.py:40 Введены данные для регистрации: April Grant, 1@56HY_g*3
-INFO     tests.test_signup:test_signup.py:49 Пользователь April Grant успешно зарегистрирован и вошел в систему.

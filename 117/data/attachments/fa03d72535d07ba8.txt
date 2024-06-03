@@ -1,3 +1,0 @@
-2024-05-12 16:03:47,525 - tests.test_register_and_login - INFO - Страница регистрации открыта.
-2024-05-12 16:03:49,434 - tests.test_register_and_login - INFO - Зарегистрирован новый пользователь: Mr. Edward Smith
-2024-05-12 16:03:49,448 - tests.test_register_and_login - INFO - Пользователь Mr. Edward Smith успешно зарегистрирован и вошел в систему.

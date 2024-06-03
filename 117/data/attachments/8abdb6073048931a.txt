@@ -1,2 +1,0 @@
-2024-05-12 16:03:30,849 - tests.test_home_page - INFO - Страница входа открыта
-2024-05-12 16:03:30,918 - tests.test_home_page - INFO - Заголовок не Wrong Title, как и ожидалось для https://demoblaze.com/

@@ -1,3 +1,0 @@
-INFO     tests.test_signup:test_signup.py:36 Страница регистрации открыта.
-INFO     tests.test_signup:test_signup.py:40 Введены данные для регистрации: Tamara Austin, T&Nc4tRyzI
-INFO     tests.test_signup:test_signup.py:49 Пользователь Tamara Austin успешно зарегистрирован и вошел в систему.
