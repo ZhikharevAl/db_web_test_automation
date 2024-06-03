@@ -1,3 +1,0 @@
-2024-05-12 15:59:23,787 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-12 15:59:24,424 - tests.test_signup - INFO - Введены данные для регистрации: Robert Dawson, )3VOhOC^pN
-2024-05-12 15:59:24,425 - tests.test_signup - INFO - Пользователь Robert Dawson успешно зарегистрирован и вошел в систему.

@@ -1,0 +1,5 @@
+2024-06-03 02:07:11,386 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-03 02:07:12,356 - tests.test_signup - INFO - Введены данные для регистрации: James Sanchez, (20Qu_CzZD
+2024-06-03 02:07:12,356 - tests.test_signup - INFO - Пользователь James Sanchez успешно зарегистрирован и вошел в систему.
+2024-06-03 02:07:12,357 - tests.test_signup - INFO - Тест завершен.
+2024-06-03 02:07:12,357 - tests.test_login - INFO - Тест завершен
