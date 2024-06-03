@@ -42,3 +42,6 @@ class TestLogoutFunctionality(TestFixtures, BaseTest):
                 attachment_type=allure.attachment_type.PNG,
             )
             raise
+
+        finally:
+            logger.info("Тест завершен.")

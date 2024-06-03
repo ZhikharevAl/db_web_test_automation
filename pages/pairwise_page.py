@@ -135,7 +135,7 @@ class PairwisePage(BasePage):
         provided credit card number.
 
         Args:
-            credit_card (int): The credit card number to fill.
+            credit_card (str): The credit card number to fill.
 
         Returns:
             None
@@ -149,7 +149,7 @@ class PairwisePage(BasePage):
         Fill the month field with the given value.
 
         Args:
-            month (int): The value to fill the month field with.
+            month (str): The value to fill the month field with.
         """
         # Find the month field element by label
         # and fill it with the given value
@@ -160,7 +160,7 @@ class PairwisePage(BasePage):
         Fill the year field with the given value.
 
         Args:
-            year (int): The value to fill the year field with.
+            year (str): The value to fill the year field with.
         """
         # Find the year field element by label and fill it with the given value
         self.get_by_label(PairwisePageLocators.YEAR).fill(year)

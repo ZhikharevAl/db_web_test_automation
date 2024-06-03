@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import sync_playwright, BrowserContext, Page
 
-from generator.generator_person_data import generate_person_data
+from data.data import PersonData
 from pages.base_pages.base_test import BaseTest
 from pages.product_page import ProductPage
 from pages.register_and_login_page import RegisterAndLoginPage
@@ -37,7 +37,7 @@ class TestFixtures(BaseTest):
         Фикстура для регистрации и входа в систему.
         """
 
-        person = generate_person_data()
+        person = PersonData()
         self.register_and_login_page.go_to(base_url)
         username = person.name
         password = person.password
@@ -55,7 +55,7 @@ class TestFixtures(BaseTest):
     @pytest.fixture(params=[True, False])
     def user_account_authorized(self, request, page, base_url):
         if request.param:
-            person = generate_person_data()
+            person = PersonData()
             self.register_and_login_page.go_to(base_url)
             username = person.name
             password = person.password

@@ -2,9 +2,9 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
+from data.data import PersonData
 from logging_config import configure_logger
 from pages.base_pages.base_test import BaseTest
-from generator.generator_person_data import generate_person_data
 
 logger = configure_logger(__name__, "test.log")
 
@@ -23,7 +23,7 @@ class RegisterAndLogin(BaseTest):
         :param page: Экземпляр страницы для тестирования.
         :param base_url: URL-адрес домашней страницы.
         """
-        person = generate_person_data()
+        person = PersonData()
 
         try:
             with allure.step(f"Открываем страницу регистрации ({base_url})"):
@@ -61,3 +61,6 @@ class RegisterAndLogin(BaseTest):
                 attachment_type=allure.attachment_type.PNG,
             )
             raise
+
+        finally:
+            logger.info("Тест завершен.")

@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-from generator.generator_person_data import generate_person_data
+from data.data import PersonData
 from pages.base_pages.base_test import BaseTest
 from logging_config import configure_logger
 
@@ -20,7 +20,7 @@ class TestE2E(BaseTest):
         :param page: Экземпляр страницы для тестирования.
         :param base_url: URL-адрес домашней страницы.
         """
-        person = generate_person_data()
+        person = PersonData()
 
         try:
             with allure.step("Открываем страницу"):
@@ -71,3 +71,6 @@ class TestE2E(BaseTest):
         except Exception as e:
             logger.error(f"Ошибка при выполнении теста: {e}")
             raise
+
+        finally:
+            logger.info("Тест завершен.")

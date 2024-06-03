@@ -67,3 +67,6 @@ def test_signup_functionality(page, base_url, username, password, test_type):
             attachment_type=allure.attachment_type.PNG,
         )
         raise
+
+    finally:
+        logger.info("Тест завершен.")

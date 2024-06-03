@@ -2,7 +2,7 @@ import allure
 import pytest
 from allure_commons.types import Severity
 
-from generator.generator_person_data import generate_person_data
+from data.data import PersonData
 from logging_config import configure_logger
 from pages.base_pages.base_test import BaseTest
 
@@ -18,7 +18,7 @@ class PlaceOrder(BaseTest):
         Тестирование функциональности оформления заказа.
         :param page: Экземпляр страницы для тестирования.
         """
-        person = generate_person_data()
+        person = PersonData()
 
         try:
             with allure.step("Добавляем товар в корзину"):
@@ -54,3 +54,6 @@ class PlaceOrder(BaseTest):
                 attachment_type=allure.attachment_type.PNG,
             )
             raise
+
+        finally:
+            logger.info("Тест завершен.")
