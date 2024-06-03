@@ -3,7 +3,7 @@ import allure
 
 from allure_commons.types import Severity
 
-from generator.generator_person_data import generate_person_data
+from data.data import PersonData
 from pages.base_pages.base_test import BaseTest
 from tests.test_signup import test_signup_functionality
 from logging_config import configure_logger
@@ -34,7 +34,7 @@ class TestLoginPage(BaseTest):
         :param password: Пароль для регистрации.
         :param test_type: Тип теста ('positive' или 'negative').
         """
-        person = generate_person_data()
+        person = PersonData()
         username = person.name
         password = person.password
 
@@ -74,3 +74,6 @@ class TestLoginPage(BaseTest):
                 attachment_type=allure.attachment_type.PNG,
             )
             raise
+
+        finally:
+            logger.info("Тест завершен")

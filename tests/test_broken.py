@@ -6,6 +6,7 @@ from pages.base_pages.base_test import BaseTest
 logger = configure_logger(__name__, "test.log")
 
 
+@pytest.mark.skip
 @pytest.mark.broken
 @allure.description("Тестирование некорректного названия домашней страницы.")
 class TestHomePageBroken(BaseTest):

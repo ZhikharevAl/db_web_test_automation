@@ -19,3 +19,6 @@ class ProductPage(BasePage):
         Метод для получения имени продукта на странице.
         """
         return self.inner_text(ProductPageLocators.NAMEPRODUCT)
+
+    def click_product_samsung(self):
+        self.click_button(ProductPageLocators.PRODUCTNAMESAMSUNG)

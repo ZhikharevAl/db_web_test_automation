@@ -3,7 +3,7 @@ import pytest
 from allure_commons.types import Severity
 
 from conftest import TestFixtures
-from generator.generator_person_data import generate_person_data
+from data.data import PersonData
 from logging_config import configure_logger
 from pages.base_pages.base_test import BaseTest
 
@@ -234,7 +234,7 @@ class TestPairwise(TestFixtures, BaseTest):
             Exception: Если происходит ошибка во время выполнения теста.
         """
         # Генерируем случайные данные для заказа
-        person_order = generate_person_data()
+        person_order = PersonData()
 
         try:
             # Щелкнуть кнопку 'Smartphone'
@@ -304,7 +304,7 @@ class TestPairwise(TestFixtures, BaseTest):
             Exception: Если происходит ошибка во время выполнения теста.
         """
         # Генерируем случайные данные для заказа
-        person_order = generate_person_data()
+        person_order = PersonData()
 
         try:
             if user_account_authorized:
@@ -404,3 +404,6 @@ class TestPairwise(TestFixtures, BaseTest):
                 attachment_type=allure.attachment_type.PNG,
             )
             raise
+
+        finally:
+            logger.info("Тест завершен.")
