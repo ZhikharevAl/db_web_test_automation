@@ -4,7 +4,7 @@ from faker import Faker
 fake = Faker()
 
 
-@dataclass
+@dataclass(slots=True)
 class PersonData:
     name: str = field(default_factory=lambda: fake.name())
     country: str = field(default_factory=lambda: fake.country())
