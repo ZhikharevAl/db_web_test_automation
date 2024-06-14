@@ -1,3 +1,0 @@
-2024-05-12 17:02:46,234 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-12 17:02:46,987 - tests.test_signup - INFO - Введены данные для регистрации: Elizabeth Andersen, +ejTBfSJ!4
-2024-05-12 17:02:46,988 - tests.test_signup - INFO - Пользователь Elizabeth Andersen успешно зарегистрирован и вошел в систему.

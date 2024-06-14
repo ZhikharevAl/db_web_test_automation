@@ -1,0 +1,4 @@
+INFO     tests.test_signup:test_signup.py:39 Страница регистрации открыта.
+INFO     tests.test_signup:test_signup.py:43 Введены данные для регистрации: valid_username, valid_password
+INFO     tests.test_signup:test_signup.py:52 Пользователь valid_username успешно зарегистрирован и вошел в систему.
+INFO     tests.test_signup:test_signup.py:72 Тест завершен.

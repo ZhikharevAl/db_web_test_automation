@@ -1,3 +1,0 @@
-2024-05-12 17:02:44,255 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-12 17:02:44,994 - tests.test_signup - INFO - Введены данные для регистрации: Theresa Lawrence, Fn6Ikfya(v
-2024-05-12 17:02:44,994 - tests.test_signup - INFO - Пользователь Theresa Lawrence успешно зарегистрирован и вошел в систему.

@@ -1,3 +1,0 @@
-2024-05-12 17:02:42,856 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-12 17:02:43,819 - tests.test_signup - INFO - Введены данные для регистрации: valid_username, invalid_password
-2024-05-12 17:02:43,820 - tests.test_signup - ERROR - Регистрация или вход в систему не удался для пользователя valid_username.

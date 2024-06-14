@@ -1,6 +1,0 @@
-2024-05-12 17:02:53,308 - tests.test_pairwise - INFO - Кнопка 'Smartphone' нажата.
-2024-05-12 17:02:53,436 - tests.test_pairwise - INFO - Карточка смартфона нажата.
-2024-05-12 17:02:53,661 - tests.test_pairwise - INFO - Кнопка 'Add to Cart' нажата.
-2024-05-12 17:02:53,786 - tests.test_pairwise - INFO - Кнопка 'Cart' нажата.
-2024-05-12 17:02:54,461 - tests.test_pairwise - INFO - Кнопка 'Submit' нажата.
-2024-05-12 17:02:54,508 - tests.test_pairwise - INFO - Заказ подтвержден.

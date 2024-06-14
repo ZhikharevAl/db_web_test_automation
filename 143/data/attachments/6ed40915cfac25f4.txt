@@ -1,0 +1,5 @@
+2024-06-14 17:03:44,387 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-14 17:03:45,197 - tests.test_signup - INFO - Введены данные для регистрации: Steven Martin, &qKeB$lV_7
+2024-06-14 17:03:45,198 - tests.test_signup - INFO - Пользователь Steven Martin успешно зарегистрирован и вошел в систему.
+2024-06-14 17:03:45,198 - tests.test_signup - INFO - Тест завершен.
+2024-06-14 17:03:45,199 - tests.test_login - INFO - Тест завершен
