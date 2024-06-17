@@ -11,7 +11,6 @@ logger = configure_logger(__name__, "test.log")
 
 
 class TestPairwise(TestFixtures, BaseTest):
-
     @pytest.mark.smoke
     @pytest.mark.pairwise
     @allure.severity(Severity.CRITICAL)
