@@ -10,7 +10,6 @@ from pages.place_order_page import PlaceOrderPage
 
 
 class E2EPage(PlaceOrderPage, BasePage):
-
     def check_product_store_text(self):
         self.title()
 

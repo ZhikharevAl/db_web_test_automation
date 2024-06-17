@@ -10,7 +10,6 @@ logger = configure_logger(__name__, "test.log")
 
 
 class RegisterAndLogin(BaseTest):
-
     @pytest.mark.smoke
     @allure.severity(Severity.CRITICAL)
     @allure.description(

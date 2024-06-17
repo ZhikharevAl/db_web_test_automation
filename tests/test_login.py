@@ -12,7 +12,6 @@ logger = configure_logger(__name__, "test.log")
 
 
 class TestLoginPage(BaseTest):
-
     @pytest.mark.smoke
     @allure.severity(Severity.CRITICAL)
     @allure.description("Тестирование функциональности входа.")
