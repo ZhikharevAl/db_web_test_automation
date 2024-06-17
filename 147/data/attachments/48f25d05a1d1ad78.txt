@@ -1,0 +1,5 @@
+2024-06-17 18:03:09,240 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-17 18:03:10,098 - tests.test_signup - INFO - Введены данные для регистрации: Charles Hunt, y!zS4IDzO7
+2024-06-17 18:03:10,099 - tests.test_signup - INFO - Пользователь Charles Hunt успешно зарегистрирован и вошел в систему.
+2024-06-17 18:03:10,099 - tests.test_signup - INFO - Тест завершен.
+2024-06-17 18:03:10,099 - tests.test_login - INFO - Тест завершен

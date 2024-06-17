@@ -1,4 +1,0 @@
-INFO     tests.test_pairwise:test_pairwise.py:145 Страница магазина открыта.
-INFO     tests.test_pairwise:test_pairwise.py:150 Кнопка ноутбука нажата.
-INFO     tests.test_pairwise:test_pairwise.py:155 Страница ноутбука открыта.
-INFO     tests.test_pairwise:test_pairwise.py:159 Текст названия ноутбука проверен и соответствует ожидаемому.

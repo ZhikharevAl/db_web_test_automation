@@ -1,3 +1,0 @@
-2024-05-13 16:58:55,833 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-13 16:58:56,601 - tests.test_signup - INFO - Введены данные для регистрации: Timothy Herring, %)3TQ4ixa!
-2024-05-13 16:58:56,602 - tests.test_signup - INFO - Пользователь Timothy Herring успешно зарегистрирован и вошел в систему.
