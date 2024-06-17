@@ -1,8 +1,0 @@
-INFO     tests.test_e2e:test_e2e.py:31 Страница открыта.
-INFO     tests.test_e2e:test_e2e.py:39 Логотип проверен.
-INFO     tests.test_e2e:test_e2e.py:45 Новый пользователь зарегистрирован.
-INFO     tests.test_e2e:test_e2e.py:51 Пользователь авторизован.
-INFO     tests.test_e2e:test_e2e.py:57 Пользователь авторизован.
-INFO     tests.test_e2e:test_e2e.py:63 Продукт добавлен в корзину.
-INFO     tests.test_e2e:test_e2e.py:70 Заказ оформлен.
-INFO     tests.test_e2e:test_e2e.py:76 Заказ оформлен.

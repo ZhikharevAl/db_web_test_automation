@@ -1,3 +1,0 @@
-2024-05-12 17:15:11,328 - tests.test_register_and_login - INFO - Страница регистрации открыта.
-2024-05-12 17:15:14,057 - tests.test_register_and_login - INFO - Зарегистрирован новый пользователь: Tim Price
-2024-05-12 17:15:14,085 - tests.test_register_and_login - INFO - Пользователь Tim Price успешно зарегистрирован и вошел в систему.

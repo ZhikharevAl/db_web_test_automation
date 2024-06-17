@@ -1,3 +1,0 @@
-2024-05-12 17:14:59,919 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-12 17:15:00,700 - tests.test_signup - INFO - Введены данные для регистрации: Anthony Goodman Jr., w&0Tx15N80
-2024-05-12 17:15:00,700 - tests.test_signup - INFO - Пользователь Anthony Goodman Jr. успешно зарегистрирован и вошел в систему.

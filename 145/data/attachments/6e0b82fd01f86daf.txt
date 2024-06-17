@@ -1,0 +1,6 @@
+INFO     tests.test_pairwise:test_pairwise.py:191 Страница магазина открыта.
+INFO     tests.test_pairwise:test_pairwise.py:194 Кнопка смартфона нажата.
+INFO     tests.test_pairwise:test_pairwise.py:197 Кнопка смартфона нажата.
+INFO     tests.test_pairwise:test_pairwise.py:200 Кнопка 'Добавить в корзину' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:203 Кнопка корзины нажата.
+INFO     tests.test_pairwise:test_pairwise.py:206 Текст названия смартфона проверен и соответствует ожидаемому.
