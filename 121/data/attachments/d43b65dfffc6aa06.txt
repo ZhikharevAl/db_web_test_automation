@@ -1,6 +1,0 @@
-2024-05-13 16:52:59,767 - tests.test_pairwise - INFO - Страница магазина открыта.
-2024-05-13 16:52:59,948 - tests.test_pairwise - INFO - Кнопка 'Monitor' нажата.
-2024-05-13 16:53:00,283 - tests.test_pairwise - INFO - Карточка монитора нажата.
-2024-05-13 16:53:00,667 - tests.test_pairwise - INFO - Кнопка 'Add to Cart' нажата.
-2024-05-13 16:53:00,817 - tests.test_pairwise - INFO - Кнопка 'Cart' нажата.
-2024-05-13 16:53:01,449 - tests.test_pairwise - INFO - Заказ подтвержден.

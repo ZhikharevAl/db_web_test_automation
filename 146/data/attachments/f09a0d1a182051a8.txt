@@ -1,0 +1,6 @@
+2024-06-17 17:45:23,540 - tests.test_pairwise - INFO - Кнопка 'Monitor' нажата.
+2024-06-17 17:45:23,846 - tests.test_pairwise - INFO - Карточка монитора нажата.
+2024-06-17 17:45:24,105 - tests.test_pairwise - INFO - Кнопка 'Add to Cart' нажата.
+2024-06-17 17:45:24,222 - tests.test_pairwise - INFO - Кнопка 'Cart' нажата.
+2024-06-17 17:45:25,060 - tests.test_pairwise - INFO - Текст названия монитора верен.
+2024-06-17 17:45:25,061 - tests.test_pairwise - INFO - Тест завершен.
