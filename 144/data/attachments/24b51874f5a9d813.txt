@@ -1,0 +1,5 @@
+2024-06-17 16:51:36,976 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-17 16:51:37,629 - tests.test_signup - INFO - Введены данные для регистрации: Jennifer Davies, UP3s+0DkA*
+2024-06-17 16:51:37,630 - tests.test_signup - INFO - Пользователь Jennifer Davies успешно зарегистрирован и вошел в систему.
+2024-06-17 16:51:37,630 - tests.test_signup - INFO - Тест завершен.
+2024-06-17 16:51:37,630 - tests.test_login - INFO - Тест завершен

@@ -1,0 +1,2 @@
+INFO     tests.test_logout_functionality:test_logout_functionality.py:33 Выход из системы выполнен успешно.
+INFO     tests.test_logout_functionality:test_logout_functionality.py:47 Тест завершен.

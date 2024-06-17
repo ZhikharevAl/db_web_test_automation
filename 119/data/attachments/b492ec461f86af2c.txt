@@ -1,3 +1,0 @@
-INFO     tests.test_signup:test_signup.py:36 Страница регистрации открыта.
-INFO     tests.test_signup:test_signup.py:40 Введены данные для регистрации: Wayne Jenkins, 8Q^8AXVd(X
-INFO     tests.test_signup:test_signup.py:49 Пользователь Wayne Jenkins успешно зарегистрирован и вошел в систему.

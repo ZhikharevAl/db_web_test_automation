@@ -1,0 +1,5 @@
+2024-06-17 16:51:34,286 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-17 16:51:34,912 - tests.test_signup - INFO - Введены данные для регистрации: Nichole Johnson, *U0W)Va5k4
+2024-06-17 16:51:34,913 - tests.test_signup - INFO - Пользователь Nichole Johnson успешно зарегистрирован и вошел в систему.
+2024-06-17 16:51:34,913 - tests.test_signup - INFO - Тест завершен.
+2024-06-17 16:51:34,914 - tests.test_login - INFO - Тест завершен
