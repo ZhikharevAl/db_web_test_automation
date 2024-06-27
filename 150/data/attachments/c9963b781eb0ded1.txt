@@ -1,0 +1,4 @@
+2024-06-27 20:26:58,149 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-27 20:26:58,994 - tests.test_signup - INFO - Введены данные для регистрации: valid_username, valid_password
+2024-06-27 20:26:58,995 - tests.test_signup - INFO - Пользователь valid_username успешно зарегистрирован и вошел в систему.
+2024-06-27 20:26:58,996 - tests.test_signup - INFO - Тест завершен.

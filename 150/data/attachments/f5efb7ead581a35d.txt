@@ -1,0 +1,5 @@
+2024-06-27 20:27:03,487 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-27 20:27:04,419 - tests.test_signup - INFO - Введены данные для регистрации: Autumn Davidson, @7QQn2J1+7
+2024-06-27 20:27:04,420 - tests.test_signup - INFO - Пользователь Autumn Davidson успешно зарегистрирован и вошел в систему.
+2024-06-27 20:27:04,421 - tests.test_signup - INFO - Тест завершен.
+2024-06-27 20:27:04,421 - tests.test_login - INFO - Тест завершен

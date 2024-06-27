@@ -1,0 +1,5 @@
+2024-06-27 20:27:02,878 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-27 20:27:03,783 - tests.test_signup - INFO - Введены данные для регистрации: David Harris, $32HHdeqAr
+2024-06-27 20:27:03,784 - tests.test_signup - INFO - Пользователь David Harris успешно зарегистрирован и вошел в систему.
+2024-06-27 20:27:03,784 - tests.test_signup - INFO - Тест завершен.
+2024-06-27 20:27:03,785 - tests.test_login - INFO - Тест завершен
