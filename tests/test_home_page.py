@@ -10,45 +10,38 @@ logger = configure_logger(__name__, "test.log")
 
 
 class TestHomePage(BaseTest):
+
     @pytest.mark.smoke
     @allure.severity(Severity.CRITICAL)
-    @allure.description("Тестирование заголовка домашней страницы.")
-    @pytest.mark.parametrize(
-        "expected_title, test_type",
-        [
-            ("STORE", "positive"),
-            ("Wrong Title", "negative"),
-        ],
-    )
-    def test_home_page_title(self, page, base_url, expected_title, test_type):
-        """
-        Тестирование заголовка домашней страницы.
+    @allure.description("Позитивное тестирование заголовка домашней страницы.")
+    def test_home_page_title_positive(self, page, base_url):
+        expected_title = "STORE"
+        self._check_home_page_title(page, base_url, expected_title, should_match=True)
 
-        :param page: Экземпляр страницы для тестирования.
-        :param base_url: URL-адрес домашней страницы.
-        :param expected_title: Ожидаемый заголовок страницы.
-        :param test_type: Тип теста ('positive' или 'negative').
-        """
+    @pytest.mark.smoke
+    @allure.severity(Severity.CRITICAL)
+    @allure.description("Негативное тестирование заголовка домашней страницы.")
+    def test_home_page_title_negative(self, page, base_url):
+        wrong_title = "Wrong Title"
+        self._check_home_page_title(page, base_url, wrong_title, should_match=False)
 
+    def _check_home_page_title(self, page, base_url, expected_title, should_match):
         try:
-            with allure.step("Открываем страницу входа"):
+            with allure.step("Открываем домашнюю страницу"):
                 self.home_page.go_to(base_url)
-                logger.info("Страница входа открыта")
+                logger.info("Домашняя страница открыта")
 
-            with allure.step("Проверка заголовка"):
-                if test_type == "positive":
-                    assert (
-                        self.home_page.get_title() == expected_title
-                    ), f"Неверный заголовок для {base_url}"
+            with allure.step(f"Проверка заголовка {'соответствует' if should_match else
+                                                   'не соответствует'} ожидаемому"):
+                actual_title = self.home_page.get_title()
+                if should_match:
+                    assert actual_title == expected_title, (f"Неверный заголовок для "
+                    f"{base_url}. Ожидалось: {expected_title}, Получено: {actual_title}")
                     logger.info(f"Заголовок верен для {base_url}")
-                elif test_type == "negative":
-                    assert (
-                        self.home_page.get_title() != expected_title
-                    ), f"Заголовок не должен быть {expected_title}"
-                    logger.info(
-                        f"Заголовок не {expected_title}, "
-                        f"как и ожидалось для {base_url}"
-                    )
+                else:
+                    assert actual_title != expected_title, \
+                    f"Заголовок не должен быть '{expected_title}' для {base_url}"
+                    logger.info(f"Заголовок не '{expected_title}', как и ожидалось для {base_url}")
 
         except Exception as e:
             logger.error(f"Ошибка при выполнении теста: {e}")
