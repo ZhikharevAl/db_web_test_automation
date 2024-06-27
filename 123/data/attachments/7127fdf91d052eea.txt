@@ -1,5 +1,0 @@
-2024-05-15 17:48:36,985 - tests.test_pairwise - INFO - Кнопка 'Monitor' нажата.
-2024-05-15 17:48:37,280 - tests.test_pairwise - INFO - Карточка монитора нажата.
-2024-05-15 17:48:37,651 - tests.test_pairwise - INFO - Кнопка 'Add to Cart' нажата.
-2024-05-15 17:48:37,795 - tests.test_pairwise - INFO - Кнопка 'Cart' нажата.
-2024-05-15 17:48:38,619 - tests.test_pairwise - INFO - Текст названия монитора верен.

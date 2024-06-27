@@ -1,3 +1,0 @@
-INFO     tests.test_signup:test_signup.py:39 Страница регистрации открыта.
-INFO     tests.test_signup:test_signup.py:43 Введены данные для регистрации: Jessica Robinson, ^P2SjBzoO+
-INFO     tests.test_signup:test_signup.py:52 Пользователь Jessica Robinson успешно зарегистрирован и вошел в систему.

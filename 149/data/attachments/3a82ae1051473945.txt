@@ -1,0 +1,5 @@
+2024-06-27 20:20:10,862 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-27 20:20:11,469 - tests.test_signup - INFO - Введены данные для регистрации: Dr. Amanda Branch DDS, WRoQ7Rm@*v
+2024-06-27 20:20:11,470 - tests.test_signup - INFO - Пользователь Dr. Amanda Branch DDS успешно зарегистрирован и вошел в систему.
+2024-06-27 20:20:11,470 - tests.test_signup - INFO - Тест завершен.
+2024-06-27 20:20:11,470 - tests.test_login - INFO - Тест завершен

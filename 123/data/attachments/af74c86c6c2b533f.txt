@@ -1,3 +1,0 @@
-INFO     tests.test_slider:test_slider.py:33 Страница со слайдером открыта за 0.31 секунд.
-INFO     tests.test_slider:test_slider.py:42 Кликнули на слайд с индексом 1 за 0.14 секунд.
-INFO     tests.test_slider:test_slider.py:58 Слайд с индексом 1 активен за 0.05 секунд.

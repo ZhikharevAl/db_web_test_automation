@@ -1,0 +1,9 @@
+2024-06-27 20:20:26,779 - tests.test_pairwise - INFO - Страница магазина открыта.
+2024-06-27 20:20:26,888 - tests.test_pairwise - INFO - Кнопка ноутбука нажата.
+2024-06-27 20:20:27,209 - tests.test_pairwise - INFO - Страница ноутбука открыта.
+2024-06-27 20:20:27,535 - tests.test_pairwise - INFO - Кнопка 'Добавить в корзину' нажата.
+2024-06-27 20:20:27,617 - tests.test_pairwise - INFO - Кнопка корзины нажата.
+2024-06-27 20:20:57,623 - tests.test_pairwise - ERROR - Ошибка при выполнении теста: Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+waiting for locator("//*[text() = '2017 Dell 15.6 Inch']")
+

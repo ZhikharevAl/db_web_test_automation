@@ -1,3 +1,0 @@
-2024-05-15 17:48:21,559 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-05-15 17:48:22,290 - tests.test_signup - INFO - Введены данные для регистрации: Jessica Robinson, ^P2SjBzoO+
-2024-05-15 17:48:22,291 - tests.test_signup - INFO - Пользователь Jessica Robinson успешно зарегистрирован и вошел в систему.
