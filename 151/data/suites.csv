@@ -1,0 +1,126 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jun 27 20:31:12 GMT 2024","Thu Jun 27 20:31:14 GMT 2024","1204","tests","test_login","","","","test_signup_functionality[valid_username-valid_password-positive]","Тестирование функциональности регистрации"
+"passed","Thu Jun 27 20:31:11 GMT 2024","Thu Jun 27 20:31:12 GMT 2024","1352","tests","test_login","","","","test_signup_functionality[invalid_username-valid_password-negative]","Тестирование функциональности регистрации"
+"passed","Thu Jun 27 20:31:28 GMT 2024","Thu Jun 27 20:31:28 GMT 2024","274","tests","test_product","TestProduct","","","test_product","Тестирование функциональности продукта."
+"passed","Thu Jun 27 20:31:25 GMT 2024","Thu Jun 27 20:31:25 GMT 2024","65","tests","test_pairwise","TestPairwise","","","Тестирование оформления заказа для монитора.","
+        Тест функциональности оформления заказа для монитора.
+
+        Args:
+            page: Объект страницы, представляющий текущую веб-страницу.
+            Base_url: Базовый URL веб-сайта.
+
+        Raises:
+            Exception: Если происходит ошибка во время выполнения теста.
+        "
+"passed","Thu Jun 27 20:31:28 GMT 2024","Thu Jun 27 20:31:29 GMT 2024","852","tests","test_pairwise","TestPairwise","","","Тестирование добавления монитора в корзину.","
+        Тест функциональности добавления монитора в корзину.
+
+        Args:
+            page: Объект страницы, представляющий текущую веб-страницу.
+            Base_url: Базовый URL веб-сайта.
+            User_account: Объект учетной записи пользователя,
+                          представляющий текущего пользователя.
+
+        Raises:
+            Exception: Если происходит ошибка во время выполнения теста.
+        "
+"passed","Thu Jun 27 20:31:16 GMT 2024","Thu Jun 27 20:31:16 GMT 2024","476","tests","test_home_page","TestHomePage","","","test_home_page_title_positive","Позитивное тестирование заголовка домашней страницы."
+"passed","Thu Jun 27 20:31:19 GMT 2024","Thu Jun 27 20:31:19 GMT 2024","299","tests","test_logout_functionality","TestLogoutFunctionality","","","test_logout_functionality","Тестирование функциональности выхода из системы."
+"passed","Thu Jun 27 20:31:14 GMT 2024","Thu Jun 27 20:31:15 GMT 2024","726","tests","test_add_to_cart","TestAddToCart","","","test_add_to_cart","Тестирование функциональности добавления в корзину."
+"passed","Thu Jun 27 20:31:17 GMT 2024","Thu Jun 27 20:31:19 GMT 2024","1592","tests","test_login","TestLoginPage","","","test_login_functionality[invalid_username-invalid_password-negative]","Тестирование функциональности входа."
+"passed","Thu Jun 27 20:31:15 GMT 2024","Thu Jun 27 20:31:16 GMT 2024","1387","tests","test_login","","","","test_signup_functionality[invalid_username-invalid_password-negative]","Тестирование функциональности регистрации"
+"passed","Thu Jun 27 20:31:11 GMT 2024","Thu Jun 27 20:31:12 GMT 2024","492","tests","test_home_page","TestHomePage","","","test_home_page_title_negative","Негативное тестирование заголовка домашней страницы."
+"passed","Thu Jun 27 20:31:30 GMT 2024","Thu Jun 27 20:31:30 GMT 2024","687","tests","test_slider","TestSlider","","","test_slider[0]","Тестирование слайдера на веб-странице."
+"passed","Thu Jun 27 20:31:30 GMT 2024","Thu Jun 27 20:31:31 GMT 2024","689","tests","test_slider","TestSlider","","","test_slider[1]","Тестирование слайдера на веб-странице."
+"passed","Thu Jun 27 20:31:22 GMT 2024","Thu Jun 27 20:31:23 GMT 2024","939","tests","test_pairwise","TestPairwise","","","Тестирование функциональности добавления ноутбука в корзину.","
+        Test the functionality of adding a notebook to the cart.
+
+        Args:
+            page: The page object representing the current page.
+            base_url: The base URL of the website.
+            user_account_authorized: A boolean indicating
+            whether the user account is authorized.
+        "
+"passed","Thu Jun 27 20:31:11 GMT 2024","Thu Jun 27 20:31:15 GMT 2024","3768","tests","test_e2e","TestE2E","","","test_e2e","Тестирование happy path E2E."
+"passed","Thu Jun 27 20:31:30 GMT 2024","Thu Jun 27 20:31:31 GMT 2024","1167","tests","test_signup","","","","test_signup_functionality[invalid_username-invalid_password-negative]","Тестирование функциональности регистрации"
+"passed","Thu Jun 27 20:31:24 GMT 2024","Thu Jun 27 20:31:25 GMT 2024","1293","tests","test_pairwise","TestPairwise","","","Тестирование добавления телефона в корзину.","
+        Test the functionality of adding a phone to the cart.
+
+        Args:
+            self: The instance of the test class.
+            page: The page object representing the web page.
+            base_url: The base URL of the web page.
+        "
+"passed","Thu Jun 27 20:31:29 GMT 2024","Thu Jun 27 20:31:30 GMT 2024","998","tests","test_signup","","","","test_signup_functionality[invalid_username-valid_password-negative]","Тестирование функциональности регистрации"
+"passed","Thu Jun 27 20:31:20 GMT 2024","Thu Jun 27 20:31:22 GMT 2024","1502","tests","test_pairwise","TestPairwise","","","Тестирование функциональности добавления ноутбука в корзину.","
+        Test the functionality of adding a notebook to the cart.
+
+        Args:
+            page: The page object representing the current page.
+            base_url: The base URL of the website.
+            user_account_authorized: A boolean indicating
+            whether the user account is authorized.
+        "
+"passed","Thu Jun 27 20:31:15 GMT 2024","Thu Jun 27 20:31:17 GMT 2024","1609","tests","test_login","TestLoginPage","","","test_login_functionality[invalid_username-valid_password-negative]","Тестирование функциональности входа."
+"passed","Thu Jun 27 20:31:13 GMT 2024","Thu Jun 27 20:31:15 GMT 2024","1301","tests","test_login","","","","test_signup_functionality[valid_username-invalid_password-negative]","Тестирование функциональности регистрации"
+"passed","Thu Jun 27 20:32:27 GMT 2024","Thu Jun 27 20:32:27 GMT 2024","55","tests","test_pairwise","TestPairwise","","","Тестирование функциональности просмотра продукта.","
+        Test the functionality of viewing a product.
+
+        Args:
+            self: The test class instance.
+            page: The page object.
+            base_url: The base URL of the website.
+            user_account_authorized: A flag indicating whether the
+            user account is authorized.
+
+        "
+"passed","Thu Jun 27 20:31:17 GMT 2024","Thu Jun 27 20:31:18 GMT 2024","1392","tests","test_login","TestLoginPage","","","test_login_functionality[valid_username-valid_password-positive]","Тестирование функциональности входа."
+"passed","Thu Jun 27 20:31:18 GMT 2024","Thu Jun 27 20:31:19 GMT 2024","1352","tests","test_login","TestLoginPage","","","test_login_functionality[valid_username-invalid_password-negative]","Тестирование функциональности входа."
+"skipped","Thu Jun 27 20:31:15 GMT 2024","Thu Jun 27 20:31:15 GMT 2024","0","tests","test_broken","TestHomePageBroken","","","test_homepage_loads","Тестирование некорректного названия домашней страницы."
+"passed","Thu Jun 27 20:32:30 GMT 2024","Thu Jun 27 20:32:33 GMT 2024","3331","tests","test_pairwise","TestPairwise","","","Тестирование оформления заказа для смартфона.","
+        Тест функциональности оформления заказа для смартфона.
+
+        Args:
+            page: Объект страницы, представляющий текущую веб-страницу.
+            Base_url: Базовый URL веб-сайта.
+            User_account: Объект учетной записи пользователя,
+                          представляющий текущего пользователя.
+
+        Raises:
+            Exception: Если происходит ошибка во время выполнения теста.
+        "
+"passed","Thu Jun 27 20:31:19 GMT 2024","Thu Jun 27 20:31:21 GMT 2024","1256","tests","test_pairwise","TestPairwise","","","Тестирование функциональности просмотра продукта.","
+        Test the functionality of viewing a product.
+
+        Args:
+            self: The test class instance.
+            page: The page object.
+            base_url: The base URL of the website.
+            user_account_authorized: A flag indicating whether the
+            user account is authorized.
+
+        "
+"passed","Thu Jun 27 20:31:23 GMT 2024","Thu Jun 27 20:31:25 GMT 2024","1665","tests","test_pairwise","TestPairwise","","","Тестирование оформления заказа для монитора.","
+        Тест функциональности оформления заказа для монитора.
+
+        Args:
+            page: Объект страницы, представляющий текущую веб-страницу.
+            Base_url: Базовый URL веб-сайта.
+
+        Raises:
+            Exception: Если происходит ошибка во время выполнения теста.
+        "
+"passed","Thu Jun 27 20:31:28 GMT 2024","Thu Jun 27 20:31:29 GMT 2024","1141","tests","test_signup","","","","test_signup_functionality[valid_username-invalid_password-negative]","Тестирование функциональности регистрации"
+"passed","Thu Jun 27 20:31:26 GMT 2024","Thu Jun 27 20:31:27 GMT 2024","1115","tests","test_signup","","","","test_signup_functionality[valid_username-valid_password-positive]","Тестирование функциональности регистрации"
+"passed","Thu Jun 27 20:31:21 GMT 2024","Thu Jun 27 20:31:22 GMT 2024","826","tests","test_pairwise","TestPairwise","","","Тестирование просмотра товара ноутбука.","
+        Test for viewing a notebook product.
+
+        Args:
+            page (Page): The page object for interacting with the web page.
+            base_url (str): The base URL of the online store.
+
+        Raises:
+            Exception: If there is an error during the test execution.
+
+        "
+"passed","Thu Jun 27 20:31:31 GMT 2024","Thu Jun 27 20:31:32 GMT 2024","468","tests","test_slider","TestSlider","","","test_slider[2]","Тестирование слайдера на веб-странице."

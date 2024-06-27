@@ -1,0 +1,3 @@
+2024-06-27 20:31:12,083 - tests.test_home_page - INFO - Домашняя страница открыта
+2024-06-27 20:31:12,124 - tests.test_home_page - INFO - Заголовок не 'Wrong Title', как и ожидалось для https://demoblaze.com/
+2024-06-27 20:31:12,125 - tests.test_home_page - INFO - Тест завершен.

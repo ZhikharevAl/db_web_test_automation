@@ -1,0 +1,5 @@
+2024-06-27 20:31:16,559 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-27 20:31:17,539 - tests.test_signup - INFO - Введены данные для регистрации: Priscilla Arias, z@#86EWkG_
+2024-06-27 20:31:17,539 - tests.test_signup - INFO - Пользователь Priscilla Arias успешно зарегистрирован и вошел в систему.
+2024-06-27 20:31:17,540 - tests.test_signup - INFO - Тест завершен.
+2024-06-27 20:31:17,540 - tests.test_login - INFO - Тест завершен

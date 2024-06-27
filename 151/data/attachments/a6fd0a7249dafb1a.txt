@@ -1,0 +1,5 @@
+2024-06-27 20:31:18,226 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-06-27 20:31:19,207 - tests.test_signup - INFO - Введены данные для регистрации: Michael Hodge, *3)I9qsdnO
+2024-06-27 20:31:19,208 - tests.test_signup - INFO - Пользователь Michael Hodge успешно зарегистрирован и вошел в систему.
+2024-06-27 20:31:19,208 - tests.test_signup - INFO - Тест завершен.
+2024-06-27 20:31:19,209 - tests.test_login - INFO - Тест завершен
