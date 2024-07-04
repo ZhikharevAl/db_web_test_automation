@@ -97,12 +97,12 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/fd486f61-f
 ## Структура проекта
 
 - `.github/workflows/` - директория с workflow-файлами
-- `databases/` - директория с базами данных
+- `data/` - директория с данными
 - `docs/` - директория с документацией
 - `tests/` - директория с тестами
-- `generator` - директория с генератором
 - `pages/` - директория с описанием страниц
 - `.gitignore` - файл с игнорируемыми файлами
+- `.dockerignore` - файл с игнорируемыми файлами
 - `conftest.py` - файл с конфигурацией
 - `docker-compose.yml` - файл с конфигурацией docker-compose
 - `Dockerfile` - файл с Dockerfile
