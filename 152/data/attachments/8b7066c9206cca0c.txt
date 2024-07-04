@@ -1,0 +1,4 @@
+INFO     tests.test_product:test_product.py:31 Нажали на продукт за 0.10 секунд.
+INFO     tests.test_product:test_product.py:40 Имя продукта получено за 0.15 секунд.
+INFO     tests.test_product:test_product.py:46 Имя продукта отображается корректно: Sony vaio i5 за 0.15 секунд.
+INFO     tests.test_product:test_product.py:64 Тест завершен.

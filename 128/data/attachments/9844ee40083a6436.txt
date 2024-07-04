@@ -1,3 +1,0 @@
-2024-06-01 21:23:50,064 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-06-01 21:23:50,884 - tests.test_signup - INFO - Введены данные для регистрации: Brandon Johnson, ()2J4tNwqh
-2024-06-01 21:23:50,885 - tests.test_signup - INFO - Пользователь Brandon Johnson успешно зарегистрирован и вошел в систему.

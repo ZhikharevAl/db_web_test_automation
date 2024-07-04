@@ -1,0 +1,5 @@
+2024-07-04 16:57:18,959 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-07-04 16:57:19,765 - tests.test_signup - INFO - Введены данные для регистрации: Stacey Edwards, +m^Bs3fZ+8
+2024-07-04 16:57:19,766 - tests.test_signup - INFO - Пользователь Stacey Edwards успешно зарегистрирован и вошел в систему.
+2024-07-04 16:57:19,766 - tests.test_signup - INFO - Тест завершен.
+2024-07-04 16:57:19,766 - tests.test_login - INFO - Тест завершен
