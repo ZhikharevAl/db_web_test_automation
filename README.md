@@ -34,38 +34,50 @@ This project is a set of automated UI tests written in Python using Playwright, 
    - `pytest --numprocesses auto`
 
 > The `pytest --numprocesses auto` command is used to run tests in parallel using the pytest-xdist plugin. To install the pytest-xdist plugin, execute the following command:
-> 
+>
 > ```sh
 > pip install -U pytest-xdist
 > ```
+>
 > Or:
+>
 > ```sh
 > pip install pytest-xdist
 > ```
+>
 > If you want to use psutil to determine the number of available processors, install the additional psutil package:
+>
 > ```sh
 > pip install pytest-xdist[psutil]
 > ```
+>
 > Example:
+>
 > ```sh
 > pytest --numprocesses auto --count=100 .\tests\name_test.py
 > ```
+>
 > The `--numprocesses auto` option automatically determines the number of processes equal to the number of available processors and randomly distributes tests among them. The `--count=100` option specifies that each test should be run 100 times. The path `.\tests\name_test.py` points to the test file to be run.
 
-https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/a16482bf-ff1d-49ae-9837-335163a4fb1d
+<https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/a16482bf-ff1d-49ae-9837-335163a4fb1d>
 
 2. Run with a specified base URL:
    - `pytest --base-url https://demoblaze.com/`
 
 > The `pytest-base-url` plugin is a simple plugin for pytest that provides an optional base URL via the command line or configuration file. You can install pytest-base-url with pip:
+>
 > ```sh
 > pip install pytest-base-url
 > ```
+>
 > After installation, you can specify the base URL on the command line:
+>
 > ```sh
 > pytest --base-url https://demoblaze.com/
 > ```
+>
 > Or you can specify the base URL in the configuration file:
+>
 > ```ini
 > [pytest]
 > base_url = https://demoblaze.com/
@@ -74,14 +86,18 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/a16482bf-f
 3. Automatic test restart on failure:
 
 > If you want the test to automatically restart on failure, you can use the `pytest-rerunfailures` plugin. This plugin allows you to automatically rerun failed tests. To install the plugin, execute the following command:
+>
 > ```sh
 > pip install pytest-rerunfailures
 > ```
+>
 > Then, in the `pytest.ini` file, specify the following:
+>
 > ```ini
 > [pytest]
 > addopts = --reruns=5
 > ```
+>
 ![286441348-049dfb7e-668a-4c6b-ba03-6794fddc7c82](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/5fdb13f9-c727-400e-870b-3a62a5a15bba)
 
 4. Generate Allure report: `allure serve allure-results`
@@ -105,26 +121,28 @@ https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/a16482bf-f
 
 Descriptions of tests and documentation can be found [here](https://zhikhareval.github.io/db_web_test_automation/).
 
-### Pairwise Testing:
+### Pairwise Testing
+
 ![293063023-eef58ea5-62fb-47e5-8222-93c750683260](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/611cf28a-af6a-4b65-8f58-fde14cfededa)
 
-### State Transition Diagram:
+### State Transition Diagram
+
 ![293064089-015b7990-d614-4986-8e5c-062fc6b6c47d](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/48a8297f-27f2-4ca5-a2c1-62115a4b99ec)
 
 ## Coverage
+
 ![Screenshot 2024-05-09 193751](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/a527289e-4150-4be6-bf66-8b2d43f810f5)
 
 ## Allure Report
+
 ![Screenshot 2024-05-15 204058](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/fa89f589-2575-4aa5-998d-234710a77c82)
 ![Screenshot 2024-05-15 203604](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/56e7e260-06d2-492d-9469-5eb16a0076f9)
 ![Screenshot 2024-05-15 203957](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/e98d5d07-091c-43c8-b7df-21354be67b55)
-
 
 ## Telegram Notification
 
 For Telegram notifications, you can use a [Telegram bot](https://t.me/information_message_bot).
 ![302050143-f9c81f88-df69-4824-b9f6-9ff7e5c63b66](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/53f22342-e7e4-4ec8-9cac-b901c09c383a)
-
 
 ## License
 
