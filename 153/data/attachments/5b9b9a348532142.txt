@@ -1,0 +1,3 @@
+INFO     tests.test_home_page:test_home_page.py:31 Домашняя страница открыта
+INFO     tests.test_home_page:test_home_page.py:41 Заголовок верен для https://demoblaze.com/
+INFO     tests.test_home_page:test_home_page.py:60 Тест завершен.

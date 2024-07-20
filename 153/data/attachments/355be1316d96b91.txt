@@ -1,0 +1,4 @@
+2024-07-20 08:01:40,839 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-07-20 08:01:41,609 - tests.test_signup - INFO - Введены данные для регистрации: valid_username, valid_password
+2024-07-20 08:01:41,609 - tests.test_signup - INFO - Пользователь valid_username успешно зарегистрирован и вошел в систему.
+2024-07-20 08:01:41,610 - tests.test_signup - INFO - Тест завершен.

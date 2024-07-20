@@ -1,3 +1,0 @@
-INFO     tests.test_signup:test_signup.py:39 Страница регистрации открыта.
-INFO     tests.test_signup:test_signup.py:43 Введены данные для регистрации: Erica Watson, )TFQYj+@f0
-INFO     tests.test_signup:test_signup.py:52 Пользователь Erica Watson успешно зарегистрирован и вошел в систему.
