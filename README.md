@@ -137,7 +137,7 @@ Descriptions of tests and documentation can be found [here](https://zhikhareval.
 
 ## Allure Report
 
-![Screenshot 2024-05-15 204058](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/fa89f589-2575-4aa5-998d-234710a77c82)
+![Screenshot 2024-06-17 195516](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/9784c787-aadf-45e6-b525-7fd10dcaf861)
 ![Screenshot 2024-05-15 203604](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/56e7e260-06d2-492d-9469-5eb16a0076f9)
 ![Screenshot 2024-05-15 203957](https://github.com/ZhikharevAl/db_web_test_automation/assets/81284552/e98d5d07-091c-43c8-b7df-21354be67b55)
 
