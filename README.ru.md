@@ -1,5 +1,7 @@
 # 🎭UI Automation with [Python](https://www.python.org/) and [Playwright](https://playwright.dev/python/)
 
+[![CI/CD](https://github.com/ZhikharevAl/db_web_test_automation/actions/workflows/run_tests.yml/badge.svg)](https://github.com/ZhikharevAl/db_web_test_automation/actions/workflows/run_tests.yml)
+
 ## Содержание
 
 1. [Описание](#описание)
