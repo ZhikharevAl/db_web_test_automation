@@ -1,0 +1,5 @@
+2024-07-29 08:50:52,364 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-07-29 08:50:53,275 - tests.test_signup - INFO - Введены данные для регистрации: Michelle Miller, X+7j4IPV^m
+2024-07-29 08:50:53,275 - tests.test_signup - INFO - Пользователь Michelle Miller успешно зарегистрирован и вошел в систему.
+2024-07-29 08:50:53,276 - tests.test_signup - INFO - Тест завершен.
+2024-07-29 08:50:53,276 - tests.test_login - INFO - Тест завершен

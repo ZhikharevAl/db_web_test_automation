@@ -1,2 +1,0 @@
-2024-06-02 02:29:57,632 - tests.test_home_page - INFO - Страница входа открыта
-2024-06-02 02:29:57,667 - tests.test_home_page - INFO - Заголовок верен для https://demoblaze.com/

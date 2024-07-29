@@ -1,3 +1,0 @@
-2024-06-02 02:29:58,897 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-06-02 02:29:59,702 - tests.test_signup - INFO - Введены данные для регистрации: Michael Valdez, 21U+WUgI)i
-2024-06-02 02:29:59,703 - tests.test_signup - INFO - Пользователь Michael Valdez успешно зарегистрирован и вошел в систему.

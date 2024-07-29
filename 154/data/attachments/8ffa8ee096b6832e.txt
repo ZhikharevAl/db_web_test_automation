@@ -1,0 +1,5 @@
+2024-07-29 08:50:54,381 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-07-29 08:50:55,252 - tests.test_signup - INFO - Введены данные для регистрации: Christopher Spencer, F!^6VpjF*S
+2024-07-29 08:50:55,253 - tests.test_signup - INFO - Пользователь Christopher Spencer успешно зарегистрирован и вошел в систему.
+2024-07-29 08:50:55,253 - tests.test_signup - INFO - Тест завершен.
+2024-07-29 08:50:55,254 - tests.test_login - INFO - Тест завершен

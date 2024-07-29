@@ -1,3 +1,0 @@
-INFO     tests.test_signup:test_signup.py:39 Страница регистрации открыта.
-INFO     tests.test_signup:test_signup.py:43 Введены данные для регистрации: Phyllis Sanchez, ^Z8XQzoG@+
-INFO     tests.test_signup:test_signup.py:52 Пользователь Phyllis Sanchez успешно зарегистрирован и вошел в систему.
