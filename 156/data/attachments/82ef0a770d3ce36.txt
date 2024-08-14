@@ -1,0 +1,5 @@
+2024-08-14 15:48:16,463 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-08-14 15:48:17,132 - tests.test_signup - INFO - Введены данные для регистрации: Grant Huff PhD, Y&RM*8CZOg
+2024-08-14 15:48:17,133 - tests.test_signup - INFO - Пользователь Grant Huff PhD успешно зарегистрирован и вошел в систему.
+2024-08-14 15:48:17,133 - tests.test_signup - INFO - Тест завершен.
+2024-08-14 15:48:17,133 - tests.test_login - INFO - Тест завершен

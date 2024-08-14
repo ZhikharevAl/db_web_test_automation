@@ -1,0 +1,9 @@
+2024-08-14 15:48:48,598 - tests.test_pairwise - INFO - Кнопка 'Monitor' нажата.
+2024-08-14 15:48:48,914 - tests.test_pairwise - INFO - Карточка монитора нажата.
+2024-08-14 15:48:49,265 - tests.test_pairwise - INFO - Кнопка 'Add to Cart' нажата.
+2024-08-14 15:48:49,327 - tests.test_pairwise - INFO - Кнопка 'Cart' нажата.
+2024-08-14 15:49:19,333 - tests.test_pairwise - ERROR - Ошибка во время выполнения теста: Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+waiting for locator("//*[text() = 'ASUS Full HD']")
+
+2024-08-14 15:49:19,467 - tests.test_pairwise - INFO - Тест завершен.

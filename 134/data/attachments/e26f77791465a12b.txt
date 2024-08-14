@@ -1,3 +1,0 @@
-2024-06-02 02:45:04,858 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-06-02 02:45:05,662 - tests.test_signup - INFO - Введены данные для регистрации: Angela Dawson, S$w%6XOzkN
-2024-06-02 02:45:05,662 - tests.test_signup - INFO - Пользователь Angela Dawson успешно зарегистрирован и вошел в систему.

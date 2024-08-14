@@ -1,0 +1,4 @@
+2024-08-14 15:49:29,840 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-08-14 15:49:30,496 - tests.test_signup - INFO - Введены данные для регистрации: invalid_username, valid_password
+2024-08-14 15:49:30,496 - tests.test_signup - ERROR - Регистрация или вход в систему не удался для пользователя invalid_username.
+2024-08-14 15:49:30,497 - tests.test_signup - INFO - Тест завершен.

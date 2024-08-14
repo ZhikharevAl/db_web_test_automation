@@ -1,0 +1,15 @@
+INFO     tests.test_pairwise:test_pairwise.py:381 Кнопка 'Monitor' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:385 Карточка монитора нажата.
+INFO     tests.test_pairwise:test_pairwise.py:389 Кнопка 'Add to Cart' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:393 Кнопка 'Cart' нажата.
+ERROR    tests.test_pairwise:test_pairwise.py:399 Ошибка во время выполнения теста: Page.inner_text: Timeout 30000ms exceeded.
+Call log:
+waiting for locator("//*[text() = 'ASUS Full HD']")
+
+INFO     tests.test_pairwise:test_pairwise.py:408 Тест завершен.
+INFO     tests.test_pairwise:test_pairwise.py:381 Кнопка 'Monitor' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:385 Карточка монитора нажата.
+INFO     tests.test_pairwise:test_pairwise.py:389 Кнопка 'Add to Cart' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:393 Кнопка 'Cart' нажата.
+INFO     tests.test_pairwise:test_pairwise.py:397 Текст названия монитора верен.
+INFO     tests.test_pairwise:test_pairwise.py:408 Тест завершен.
