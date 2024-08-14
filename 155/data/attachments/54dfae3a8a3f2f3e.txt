@@ -1,0 +1,5 @@
+2024-08-14 15:42:01,809 - tests.test_signup - INFO - Страница регистрации открыта.
+2024-08-14 15:42:02,463 - tests.test_signup - INFO - Введены данные для регистрации: Jane Dickerson, sy5^KRb+$^
+2024-08-14 15:42:02,463 - tests.test_signup - INFO - Пользователь Jane Dickerson успешно зарегистрирован и вошел в систему.
+2024-08-14 15:42:02,464 - tests.test_signup - INFO - Тест завершен.
+2024-08-14 15:42:02,464 - tests.test_login - INFO - Тест завершен

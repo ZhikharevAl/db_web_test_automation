@@ -1,3 +1,0 @@
-2024-06-02 02:37:10,448 - tests.test_signup - INFO - Страница регистрации открыта.
-2024-06-02 02:37:11,510 - tests.test_signup - INFO - Введены данные для регистрации: Darryl Cochran, (QAEW(RCn8
-2024-06-02 02:37:11,510 - tests.test_signup - INFO - Пользователь Darryl Cochran успешно зарегистрирован и вошел в систему.

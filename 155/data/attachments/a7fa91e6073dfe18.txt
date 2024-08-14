@@ -1,0 +1,2 @@
+2024-08-14 15:42:05,219 - tests.test_logout_functionality - INFO - Выход из системы выполнен успешно.
+2024-08-14 15:42:05,219 - tests.test_logout_functionality - INFO - Тест завершен.
